@@ -15,11 +15,6 @@
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('app.portfolios.index') }}">
-                                @lang('pages.header.portfolio')
-                            </a>
-                        </li>
-                        <li>
                             <a href="{{ route('app.blog') }}">
                                 @lang('pages.header.blog')
                             </a>

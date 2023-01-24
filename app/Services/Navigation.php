@@ -16,48 +16,48 @@ class Navigation
     {
         return [
             new NavItem([
-                'name' => 'Блог',
+                'name' => 'Blog',
                 'route' => 'articles',
                 'icon' => 'i-newspaper',
             ]),
             new NavItem([
-                'name' => 'Категории',
+                'name' => 'Categories',
                 'route' => 'categories',
                 'icon' => 'i-bullet-list',
             ]),
             new NavItem([
-                'name' => 'Услуги',
+                'name' => 'Services',
                 'route' => 'services',
                 'icon' => 'i-grid-2',
             ]),
             new NavItem([
-                'name' => 'Портфолио',
+                'name' => 'Portfolio',
                 'route' => 'portfolios',
                 'icon' => 'i-portfolio',
             ]),
             new NavItem([
-                'name' => 'Преимущества',
+                'name' => 'Advantages',
                 'route' => 'advantages',
                 'icon' => 'i-laptop',
             ]),
             new NavItem([
-                'name' => 'Обратная связь',
+                'name' => 'Feedback',
                 'route' => 'feedback',
                 'icon' => 'i-phone',
                 'unread' => Feedback::where('status', 'processing')->count(),
             ]),
             new NavItem([
-                'name' =>'Страницы',
+                'name' =>'Pages',
                 'route'=> 'pages',
                 'icon' => 'i-folder',
             ]),
             new NavItem([
-               'name' => 'Баннеры',
+               'name' => 'Banners',
                'route' => 'banners',
                'icon' => 'i-monitor',
             ]),
             new NavItem([
-                'name' => 'Настройки',
+                'name' => 'Setting',
                 'route' => 'settings',
                 'icon' => 'i-settings',
             ])

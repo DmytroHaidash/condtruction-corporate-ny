@@ -4,7 +4,7 @@ return [
     'header' =>[
         'about' => 'About',
         'portfolio' => 'Our projects',
-        'blog' => 'The activity',
+        'blog' => 'Blog',
         'contacts' => 'Contacts',
         'phone' => 'Phone',
         'feedback' => 'To contact us',
