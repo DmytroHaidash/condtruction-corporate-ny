@@ -3,7 +3,6 @@
     <div class="container-fluid px-5">
         <div class="row justify-content-between">
             <div class="footer-item footer-copyright">
-                2019 Все права защищены
             </div>
             <ul class="social-list">
                 <li>
@@ -29,7 +28,6 @@
                 </li>
             </ul>
             <div class="footer-item mt-2 mt-sm-0">
-                Разработка и дизайн <a href="https://impressionbureau.pro/" target="_blank">Impression Bureau</a>
             </div>
         </div>
     </div>
