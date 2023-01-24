@@ -1,9 +1,9 @@
-@extends('layouts.admin', ['app_title' => 'Баннеры'])
+@extends('layouts.admin', ['app_title' => 'Banners'])
 
 @section('content')
 
     <div class="d-flex align-items-center mb-5">
-        <h1 class="mb-0 h2">Баннеры</h1>
+        <h1 class="mb-0 h2">Banners</h1>
     </div>
     @forelse($banners as $banner)
         <article class="item">
@@ -27,7 +27,7 @@
                         </a>
                     </h3>
                     <p class="mt-2 mb-0">
-                        Создан {{ $banner->created_at->format('d.m.Y \в H:i') }}
+                        Created {{ $banner->created_at->format('d.m.Y \в H:i') }}
                     </p>
                 </div>
                 <div class="col-auto align-self-center">
@@ -41,7 +41,7 @@
             </div>
         </article>
     @empty
-        Статьи пока не созданы!
+        Banners not created yet!
     @endforelse
 @endsection
 

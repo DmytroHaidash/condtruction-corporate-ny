@@ -1,8 +1,8 @@
-@extends('layouts.admin', ['app_title' => 'Записи на курсы'])
+@extends('layouts.admin', ['app_title' => 'Feedback'])
 
 @section('content')
     <div class="d-flex align-items-center mb-5">
-        <h1 class="mb-0 h2">Обратная связь</h1>
+        <h1 class="mb-0 h2">Feedback</h1>
     </div>
     @forelse($feedbacks as $feedback)
         <article class="item">
@@ -16,7 +16,7 @@
                         </a>
                     </h3>
                     <p class="mt-2 mb-0">
-                        Создан {{ $feedback->created_at->format('d.m.Y \в H:i') }}
+                        Created {{ $feedback->created_at->format('d.m.Y \в H:i') }}
                     </p>
                 </div>
                 <div class="col-auto align-self-center">
@@ -41,7 +41,7 @@
             </div>
         </article>
     @empty
-        Откликов пока нет!
+        Feedback not created yet!
     @endforelse
     {{ $feedbacks->links() }}
 @endsection
@@ -50,7 +50,7 @@
     <script>
       function confirmDelete(id) {
         event.preventDefault();
-        const agree = confirm('Уверены?');
+        const agree = confirm('Sure?');
         if (agree) {
           document.getElementById('delete-form-' + id).submit();
         }

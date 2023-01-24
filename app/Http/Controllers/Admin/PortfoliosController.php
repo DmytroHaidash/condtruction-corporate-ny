@@ -47,7 +47,7 @@ class PortfoliosController extends Controller
         }
         $this->handleMedia($request, $portfolio);
         return \redirect()->route('admin.portfolios.index')
-            ->with('message', 'Запись успешно сохранена.');
+            ->with('message', 'Successfully created.');
     }
 
     /**
@@ -83,7 +83,7 @@ class PortfoliosController extends Controller
 
         $this->handleMedia($request, $portfolio);
         return \redirect()->route('admin.portfolios.index')
-            ->with('message', 'Запись успешно сохранена.');
+            ->with('message', 'Successfully updated.');
     }
 
     /**
@@ -96,7 +96,7 @@ class PortfoliosController extends Controller
         $portfolio->clearMediaCollection('portfolio');
         $portfolio->delete();
         return \redirect()->route('admin.portfolios.index')
-            ->with('message', 'Запись успешно удалена.');
+            ->with('message', 'Successfully deleted.');
     }
 
 

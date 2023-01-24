@@ -40,7 +40,7 @@ class CategoriesController extends Controller
                 ->toMediaCollection('category');
         }
         return \redirect()->route('admin.categories.index')
-            ->with('message', 'Запись успешно сохранена.');
+            ->with('message', 'Successfully created.');
     }
 
     /**
@@ -68,7 +68,7 @@ class CategoriesController extends Controller
                 ->toMediaCollection('category');
         }
         return \redirect()->route('admin.categories.index')
-            ->with('message', 'Запись успешно сохранена.');
+            ->with('message', 'Successfully updated.');
     }
 
     /**
@@ -81,7 +81,7 @@ class CategoriesController extends Controller
         $category->clearMediaCollection('category');
         $category->delete();
         return \redirect()->route('admin.categories.index')
-            ->with('message', 'Запись успешно удалена.');
+            ->with('message', 'Successfully deleted.');
     }
 }
 

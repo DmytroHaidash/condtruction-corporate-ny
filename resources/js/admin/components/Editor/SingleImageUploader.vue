@@ -3,7 +3,7 @@
         <label class="position-relative image-uploader d-block"
                :class="{'bg-light p-4': !image}">
             <div class="text-center" v-if="!image">
-                Загрузить изображение
+                Upload Image
             </div>
 
             <img :src="image" v-else>

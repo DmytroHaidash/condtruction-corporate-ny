@@ -37,7 +37,7 @@ class FeedbackController extends Controller
         $feedback->update($request->only('status'));
 
         return \redirect()->route('admin.feedback.index')
-            ->with('message', 'Запись успешно сохранена.');
+            ->with('message', 'Successfully updated.');
     }
 
     /**
@@ -49,6 +49,6 @@ class FeedbackController extends Controller
     {
         $feedback->delete();
         return \redirect()->route('admin.feedback.index')
-            ->with('message', 'Запись успешно удалена.');
+            ->with('message', 'Successfully deleted.');
     }
 }

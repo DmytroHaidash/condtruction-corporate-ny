@@ -7,11 +7,11 @@
 
         <div class="row">
             <div class="col-md-8">
-                <block-editor title="Новая запись">
+                <block-editor title="New">
                     @foreach(config('app.locales') as $lang)
                         <fieldset slot="{{ $lang }}">
                             <div class="form-group">
-                                <label for="title">Заголовок</label>
+                                <label for="title">Title</label>
                                 <input id="title"
                                        type="text"
                                        name="{{$lang}}[title]"
@@ -38,7 +38,7 @@
         </div>
         <div class="mt-4">
             <button class="btn btn-primary">
-                Обновить
+                Save
             </button>
         </div>
     </form>

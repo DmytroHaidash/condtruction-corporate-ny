@@ -22,7 +22,7 @@ class SetLocale
         }
 
         if (app('router')->currentRouteNamed('admin.*')) {
-            app()->setLocale('ru');
+            app()->setLocale($locale);
         } else {
             app()->setLocale($locale);
         }

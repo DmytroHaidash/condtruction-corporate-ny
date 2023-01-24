@@ -1,4 +1,4 @@
-@extends('layouts.admin', ['app_title' => 'Новая категория'])
+@extends('layouts.admin', ['app_title' => 'New category'])
 
 @section('content')
     <section>
@@ -12,7 +12,7 @@
 
                             <fieldset slot="{{ $lang }}">
                                 <div class="form-group">
-                                    <label for="title">Заголовок</label>
+                                    <label for="title">Title</label>
                                     <input id="title"
                                            type="text"
                                            name="{{$lang}}[title]"
@@ -38,7 +38,7 @@
             </div>
             <div class="mt-4">
                 <button class="btn btn-primary">
-                    Сохранить
+                    Save
                 </button>
             </div>
         </form>

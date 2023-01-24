@@ -1,10 +1,10 @@
-@extends('layouts.admin', ['page_title' => 'Настройки'])
+@extends('layouts.admin', ['page_title' => 'Settings'])
 
 @section('content')
 
     <section id="content">
         <div class="d-flex align-items-center mb-5">
-            <h1 class="mb-0 h2">Настройки</h1>
+            <h1 class="mb-0 h2">Settings</h1>
         </div>
         <form action="{{ route('admin.settings.update') }}" method="post">
             @csrf
@@ -13,12 +13,12 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="phone">Телефон</label>
+                        <label for="phone">Phone</label>
                         <input type="text" class="form-control" id="phone" name="phone"
                                value="{{ old('phone') ?? $setting->phone }}">
                     </div>
                     <div class="form-group">
-                        <label for="phone_additional">Дополнительный телефон</label>
+                        <label for="phone_additional">Additional phone</label>
                         <input type="text" class="form-control" id="phone_additional" name="phone_additional"
                                value="{{ old('phone_additional') ?? $setting->phone_additional }}">
                     </div>
@@ -52,7 +52,7 @@
 
                     <fieldset slot="{{ $lang }}">
                         <div class="form-group">
-                            <label for="title">Заголовок для главного экрана</label>
+                            <label for="title">Title home page</label>
                             <input id="title"
                                    type="text"
                                    name="{{$lang}}[title]"
@@ -67,7 +67,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="description">Краткое описание для главного экрана</label>
+                            <label for="description">Description home page</label>
                             <input id="description"
                                    type="text"
                                    name="{{$lang}}[content][description]"
@@ -77,7 +77,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="address">Адресс фирмы</label>
+                            <label for="address">Address</label>
                             <input id="address"
                                    type="text"
                                    name="{{$lang}}[content][address]"
@@ -89,9 +89,9 @@
                 @endforeach
             </block-editor>
 
-            <h2 class="mt-2">Данные для карты</h2>
+            <h2 class="mt-2">Maps settings</h2>
             <div class="form-group">
-                <label for="latitude">Широта</label>
+                <label for="latitude">Latitude</label>
                 <input id="latitude"
                        type="text"
                        name="latitude"
@@ -100,7 +100,7 @@
                        required>
             </div>
             <div class="form-group">
-                <label for="longitude">Долгота</label>
+                <label for="longitude">Longitude</label>
                 <input id="address"
                        type="text"
                        name="longitude"
@@ -108,7 +108,7 @@
                        value="{{ old('longitude') ?? $setting->longitude }}"
                        required>
             </div>
-            <button class="btn btn-primary mt-2">Сохранить</button>
+            <button class="btn btn-primary mt-2">Save</button>
         </form>
     </section>
 @endsection

@@ -38,7 +38,7 @@
     },
     data() {
       return {
-        current: 'ru',
+        current: 'en',
         locales: JSON.parse(document.head.querySelector('[name="locales"]').content),
         langs: []
       }

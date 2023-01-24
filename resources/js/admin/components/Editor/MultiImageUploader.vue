@@ -16,7 +16,7 @@
             <input type="file" accept="image/*" multiple @change="handleImages">
 
             <div class="text-center">
-                <template v-if="!loading">Загрузить изображения</template>
+                <template v-if="!loading">Upload images</template>
 
                 <div class="lds-css ng-scope" v-if="loading">
                     <div style="width:100%;height:100%" class="lds-flickr">

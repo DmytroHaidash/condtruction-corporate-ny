@@ -1,4 +1,4 @@
-@extends('layouts.admin', ['app_title' => 'Новая статья'])
+@extends('layouts.admin', ['app_title' => 'New article'])
 
 @section('content')
     <section>
@@ -7,12 +7,12 @@
 
             <div class="row">
                 <div class="col-md-8">
-                    <block-editor title="Новая статья">
+                    <block-editor title="New">
                         @foreach(config('app.locales') as $lang)
 
                             <fieldset slot="{{ $lang }}">
                                 <div class="form-group">
-                                    <label for="title">Заголовок</label>
+                                    <label for="title">Title</label>
                                     <input id="title"
                                            type="text"
                                            name="{{$lang}}[title]"
@@ -29,14 +29,14 @@
                                 <wysiwyg class="mb-0"
                                          content="{{ old('body') }}"
                                          name="{{$lang}}[content][body]"
-                                         label="Текст новости"></wysiwyg>
+                                         label="Body"></wysiwyg>
                             </fieldset>
 
                         @endforeach
                     </block-editor>
                     <hr class="my-5">
                     <select class="form-control position-relative mt-3" name="category_id" id="category_id" required>
-                        <option value="" disabled selected style='display:none;'>Выберите категорию</option>
+                        <option value="" disabled selected style='display:none;'>Select category</option>
                         @foreach($categories as $category)
                             <option value="{{ $category->id }}">{{ $category->title }}</option>
                         @endforeach
@@ -48,7 +48,7 @@
             </div>
             <div class="mt-4">
                 <button class="btn btn-primary">
-                    Сохранить
+                    Save
                 </button>
             </div>
         </form>

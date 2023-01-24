@@ -40,7 +40,7 @@ class ServicesController extends Controller
                 ->toMediaCollection('service');
         }
         return \redirect()->route('admin.services.index')
-            ->with('message', 'Запись успешно сохранена.');
+            ->with('message', 'Successfully created.');
     }
 
     /**
@@ -69,7 +69,7 @@ class ServicesController extends Controller
                 ->toMediaCollection('service');
         }
         return \redirect()->route('admin.services.index')
-            ->with('message', 'Запись успешно сохранена.');
+            ->with('message', 'Successfully updated.');
     }
 
     /**
@@ -82,6 +82,6 @@ class ServicesController extends Controller
         $service->clearMediaCollection('service');
         $service->delete();
         return \redirect()->route('admin.services.index')
-            ->with('message', 'Запись успешно удалена.');
+            ->with('message', 'Successfully deleted.');
     }
 }

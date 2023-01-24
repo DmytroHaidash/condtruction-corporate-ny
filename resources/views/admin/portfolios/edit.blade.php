@@ -7,12 +7,12 @@
 
         <div class="row">
             <div class="col-md-8">
-                <block-editor title="Новая запись">
+                <block-editor title="New">
                     @foreach(config('app.locales') as $lang)
 
                         <fieldset slot="{{ $lang }}">
                             <div class="form-group">
-                                <label for="title">Заголовок</label>
+                                <label for="title">Title</label>
                                 <input id="title"
                                        type="text"
                                        name="{{$lang}}[title]"
@@ -26,7 +26,7 @@
                                 @endif
                             </div>
                             <div class="form-group">
-                                <label for="address">Адресс</label>
+                                <label for="address">Address</label>
                                 <input id="address"
                                        type="text"
                                        name="{{$lang}}[content][address]"
@@ -37,19 +37,19 @@
                             <wysiwyg class="mb-0"
                                      content="{{ old('body') ?? $portfolio->translate('content', $lang)['body'] }}"
                                      name="{{$lang}}[content][body]"
-                                     label="Описание"></wysiwyg>
+                                     label="Body"></wysiwyg>
                         </fieldset>
                     @endforeach
                 </block-editor>
                 <div class="form-group mt-2">
-                    <label for="video">Видео обзор (ссылка на youtube)</label>
+                    <label for="video">Video (youtube-link)</label>
                     <input id="video" type="text" name="video"
                            class="form-control{{ $errors->has('video') ? ' is-invalid' : '' }}"
                            value="{{ old('video') ?? $portfolio->video }}">
                 </div>
             </div>
             <div class="col-md-4">
-                <label for="portfolio">Лого для портфолио</label>
+                <label for="portfolio">Logo</label>
                 <image-uploader ratio="67%" name="portfolio"
                                 image-id="{{ optional($portfolio->getFirstMedia('portfolio'))->id }}"
                                 src="{{ $portfolio->getFirstMediaUrl('portfolio') }}"></image-uploader>
@@ -63,7 +63,7 @@
 
         <div class="mt-4">
             <button class="btn btn-primary">
-                Обновить
+                Save
             </button>
         </div>
     </form>

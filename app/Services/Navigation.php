@@ -30,11 +30,11 @@ class Navigation
                 'route' => 'services',
                 'icon' => 'i-grid-2',
             ]),
-            new NavItem([
-                'name' => 'Portfolio',
-                'route' => 'portfolios',
-                'icon' => 'i-portfolio',
-            ]),
+//            new NavItem([
+//                'name' => 'Portfolio',
+//                'route' => 'portfolios',
+//                'icon' => 'i-portfolio',
+//            ]),
             new NavItem([
                 'name' => 'Advantages',
                 'route' => 'advantages',

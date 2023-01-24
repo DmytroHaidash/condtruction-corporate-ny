@@ -6,13 +6,13 @@
         @method('patch')
         <div class="row">
             <div class="col-md">
-                <p class="font-weight-bold mb-2">Имя</p>
+                <p class="font-weight-bold mb-2">Name</p>
                 <p class="mb-1">
                     {{ $feedback->name }}
                 </p>
-                <p class="font-weight-bold mb-2">Телефон</p>
+                <p class="font-weight-bold mb-2">Phone</p>
                 <p class="mb-1">{{ $feedback->phone }}</p>
-                <p class="font-weight-bold mb-2">Заявка отправлена</p>
+                <p class="font-weight-bold mb-2">Created at</p>
                 <p class="mb-1">{{ $feedback->created_at->format(('d.m.Y \в H:i')) }}</p>
             </div>
 
@@ -30,7 +30,7 @@
 
         <div class="mt-4">
             <button class="btn btn-primary">
-                Сохранить
+                Save
             </button>
         </div>
     </form>

@@ -1,12 +1,12 @@
-@extends('layouts.admin', ['app_title' => 'Портфолио'])
+@extends('layouts.admin', ['app_title' => 'Portfolio'])
 
 @section('content')
 
     <div class="d-flex align-items-center mb-5">
-        <h1 class="mb-0 h2">Портфолио</h1>
+        <h1 class="mb-0 h2">Portfolio</h1>
         <div class="ml-3">
             <a href="{{ route('admin.portfolios.create') }}" class="btn btn-primary">
-                Создать портфолио
+                Create portfolio
             </a>
         </div>
     </div>
@@ -32,7 +32,7 @@
                         </a>
                     </h3>
                     <p class="mt-2 mb-0">
-                        Создан {{ $portfolio->created_at->format('d.m.Y \в H:i') }}
+                        Created {{ $portfolio->created_at->format('d.m.Y \в H:i') }}
                     </p>
                 </div>
                 <div class="col-auto align-self-center">
@@ -57,7 +57,7 @@
             </div>
         </article>
     @empty
-        Статьи пока не созданы!
+        Portfolio not created yet!
     @endforelse
     {{ $portfolios->links() }}
 @endsection
@@ -66,7 +66,7 @@
     <script>
       function confirmDelete(id) {
         event.preventDefault();
-        const agree = confirm('Уверены?');
+        const agree = confirm('Sure?');
         if (agree) {
           document.getElementById('delete-form-' + id).submit();
         }

@@ -1,4 +1,4 @@
-@extends('layouts.admin', ['app_title' => 'Новое преимущество'])
+@extends('layouts.admin', ['app_title' => 'New advantage'])
 
 @section('content')
     <section>
@@ -7,12 +7,12 @@
 
             <div class="row">
                 <div class="col-md-8">
-                    <block-editor title="Новое преимущество">
+                    <block-editor title="New advantage">
                         @foreach(config('app.locales') as $lang)
 
                             <fieldset slot="{{ $lang }}">
                                 <div class="form-group">
-                                    <label for="title">Заголовок</label>
+                                    <label for="title">Title</label>
                                     <input id="title"
                                            type="text"
                                            name="{{$lang}}[title]"
@@ -26,7 +26,7 @@
                                     @endif
                                 </div>
                                 <div class="form-group">
-                                    <label for="description">Краткое описание</label>
+                                    <label for="description">Description</label>
                                     <input id="description"
                                            type="text"
                                            name="{{$lang}}[content][description]"
@@ -47,7 +47,7 @@
             </div>
             <div class="mt-4">
                 <button class="btn btn-primary">
-                    Сохранить
+                    Save
                 </button>
             </div>
         </form>

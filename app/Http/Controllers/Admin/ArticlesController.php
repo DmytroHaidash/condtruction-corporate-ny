@@ -44,7 +44,7 @@ class ArticlesController extends Controller
                 ->toMediaCollection('article');
         }
         return \redirect()->route('admin.articles.index')
-            ->with('message', 'Запись успешно сохранена.');
+            ->with('message', 'Successfully created.');
     }
 
     /**
@@ -74,7 +74,7 @@ class ArticlesController extends Controller
                 ->toMediaCollection('article');
         }
         return \redirect()->route('admin.articles.index')
-            ->with('message', 'Запись успешно сохранена.');
+            ->with('message', 'Successfully updated.');
     }
 
     /**
@@ -87,6 +87,6 @@ class ArticlesController extends Controller
         $article->clearMediaCollection('article');
         $article->delete();
         return \redirect()->route('admin.articles.index')
-            ->with('message', 'Запись успешно удалена.');
+            ->with('message', 'Successfully deleted.');
     }
 }

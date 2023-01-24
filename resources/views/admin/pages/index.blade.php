@@ -1,8 +1,8 @@
-@extends('layouts.admin', ['app_title' => 'Страницы'])
+@extends('layouts.admin', ['app_title' => 'Pages'])
 
 @section('content')
     <div class="d-flex align-items-center mb-5">
-        <h1 class="mb-0 h2">Страницы</h1>
+        <h1 class="mb-0 h2">Pages</h1>
     </div>
     @forelse($pages as $page)
         <article class="item">
@@ -18,7 +18,7 @@
                         </a>
                     </h3>
                     <p class="mt-2 mb-0">
-                        Создан {{ $page->created_at->format('d.m.Y \в H:i') }}
+                        Created {{ $page->created_at->format('d.m.Y \в H:i') }}
                     </p>
                 </div>
                 <div class="col-auto align-self-center">
@@ -32,7 +32,7 @@
             </div>
         </article>
     @empty
-        Страниц пока нет!
+        Pages not created yet!
     @endforelse
 
 @endsection

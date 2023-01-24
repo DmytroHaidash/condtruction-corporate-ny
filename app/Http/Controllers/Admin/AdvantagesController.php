@@ -41,7 +41,7 @@ class AdvantagesController extends Controller
                 ->toMediaCollection('advantage');
         }
         return \redirect()->route('admin.advantages.index')
-            ->with('message', 'Запись успешно сохранена.');
+            ->with('message', 'Successfully created.');
     }
 
     /**
@@ -70,7 +70,7 @@ class AdvantagesController extends Controller
                 ->toMediaCollection('advantage');
         }
         return \redirect()->route('admin.advantages.index')
-            ->with('message', 'Запись успешно сохранена.');
+            ->with('message', 'Successfully updated.');
     }
 
     /**
@@ -83,6 +83,6 @@ class AdvantagesController extends Controller
         $advantage->clearMediaCollection('advantage');
         $advantage->delete();
         return \redirect()->route('admin.advantages.index')
-            ->with('message', 'Запись успешно удалена.');
+            ->with('message', 'Successfully deleted.');
     }
 }

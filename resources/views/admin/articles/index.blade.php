@@ -1,12 +1,12 @@
-@extends('layouts.admin', ['app_title' => 'Статьи'])
+@extends('layouts.admin', ['app_title' => 'Blog'])
 
 @section('content')
 
     <div class="d-flex align-items-center mb-5">
-        <h1 class="mb-0 h2">Статьи</h1>
+        <h1 class="mb-0 h2">Blog</h1>
         <div class="ml-3">
             <a href="{{ route('admin.articles.create') }}" class="btn btn-primary">
-                Создать новую статью
+                Create new article
             </a>
         </div>
     </div>
@@ -32,7 +32,7 @@
                         </a>
                     </h3>
                     <p class="mt-2 mb-0">
-                        Создан {{ $article->created_at->format('d.m.Y \в H:i') }}
+                        Created {{ $article->created_at->format('d.m.Y \в H:i') }}
                     </p>
                 </div>
                 <div class="col-auto align-self-center">
@@ -57,7 +57,7 @@
             </div>
         </article>
     @empty
-        Статьи пока не созданы!
+        Articles not created yet!
     @endforelse
     {{ $articles->links() }}
 @endsection
@@ -66,7 +66,7 @@
     <script>
       function confirmDelete(id) {
         event.preventDefault();
-        const agree = confirm('Уверены?');
+        const agree = confirm('Sure?');
         if (agree) {
           document.getElementById('delete-form-' + id).submit();
         }

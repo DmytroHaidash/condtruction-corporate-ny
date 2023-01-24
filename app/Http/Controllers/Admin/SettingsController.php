@@ -28,9 +28,9 @@ class SettingsController extends Controller
     {
         $setting = Setting::first();
         $setting->update($request->only('phone', 'phone_additional', 'email', 'facebook', 'instagram',
-            'twitter'));
+            'twitter', 'latitude', 'longitude'));
         $setting->updateTranslation();
         return \redirect()->route('admin.settings.index')
-            ->with('message', 'Запись успешно сохранена.');
+            ->with('message', 'Settings updated.');
     }
 }

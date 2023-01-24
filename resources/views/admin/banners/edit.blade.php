@@ -7,8 +7,8 @@
 
         <div class="row">
             <div class="col-md-8">
-                <h2> Баннер </h2>
-                <h3> для страницы </h3>
+                <h2> Banner </h2>
+                <h3> for page </h3>
                 <br>
                 <h4> {{ $banner->title }} </h4>
             </div>
@@ -19,7 +19,7 @@
         </div>
         <div class="mt-4">
             <button class="btn btn-primary">
-                Обновить
+                Save
             </button>
         </div>
     </form>

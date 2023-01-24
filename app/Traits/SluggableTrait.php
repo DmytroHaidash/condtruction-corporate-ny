@@ -35,6 +35,6 @@ trait SluggableTrait
      */
     public function getUniqueSlugAttribute(): string
     {
-        return request('uk.title') ?? request('title');
+        return request('en.title') ?? request('title');
     }
 }

@@ -29,6 +29,6 @@ class BannersController extends Controller
         }
 
         return \redirect()->route('admin.banners.index')
-            ->with('message', 'Запись успешно сохранена.');
+            ->with('message', 'Successfully updated.');
     }
 }

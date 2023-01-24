@@ -32,6 +32,6 @@ class PagesController extends Controller
         }
 
         return \redirect()->route('admin.pages.index')
-            ->with('message', 'Запись успешно сохранена.');
+            ->with('message', 'Successfully updated.');
     }
 }
