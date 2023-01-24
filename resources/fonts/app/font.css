@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'FuturaLightCTT';
+    src: url('/fonts/FuturaLightC.eot');
+    src: url('/fonts/FuturaLightC.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/FuturaLightC.woff2') format('woff2'),
+        url('/fonts/FuturaLightC.woff') format('woff'),
+        url('/fonts/FuturaLightC.ttf') format('truetype'),
+        url('/fonts/FuturaLightC.svg#FuturaLightC') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaDemiC';
+    src: url('/fonts/FuturaDemiC.eot');
+    src: url('/fonts/FuturaDemiC.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/FuturaDemiC.woff2') format('woff2'),
+        url('/fonts/FuturaDemiC.woff') format('woff'),
+        url('/fonts/FuturaDemiC.ttf') format('truetype'),
+        url('/fonts/FuturaDemiC.svg#FuturaDemiC') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

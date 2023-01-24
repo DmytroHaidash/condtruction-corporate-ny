@@ -1,0 +1,127 @@
+#single-portfolio {
+
+  .decor-bg {
+    position: absolute;
+    top: 40px;
+    left: -30px;
+    width: 35%;
+    bottom: -40px;
+    background: $secondary;
+    z-index: -1;
+    display: none;
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+      display: block;
+    }
+
+    @media (min-width: 1600px) {
+      left: 5%;
+      width: 30%;
+      bottom: -70px;
+    }
+  }
+
+  .portfolio-description {
+    margin-bottom: 50px;
+
+    .title {
+      margin-bottom: 40px;
+
+      @media (min-width: map_get($grid-breakpoints, lg)) {
+        margin-left: 24%;
+      }
+    }
+
+    .content {
+
+      @media (min-width: map_get($grid-breakpoints, lg)) {
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .logo {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+
+        @media (min-width: map_get($grid-breakpoints, lg)) {
+          width: 20%;
+          padding: 0 50px;
+          justify-content: flex-end;
+          margin-bottom: 0;
+        }
+
+        img {
+          width: auto;
+        }
+      }
+
+      .description {
+
+        @media (min-width: map_get($grid-breakpoints, lg)) {
+          width: 80%;
+          padding: 0 50px;
+          border-left: 1px solid #4F545D;
+        }
+
+        .place {
+          font-family: $headings-font-family;
+          font-size: 1.125rem;
+          color: $primary;
+          margin-bottom: 25px;
+        }
+
+        p {
+          margin-bottom: 25px;
+
+          a {
+            border-bottom: 1px dashed $primary;
+          }
+        }
+
+        ul {
+          @extend %contentList;
+        }
+      }
+    }
+  }
+
+  .portfolio-gallery-item {
+    display: block;
+    padding: 2px;
+
+    &.start-animation {
+
+      div {
+
+        &::before {
+          animation: toggleHeightOpacity 1.2s ease-in-out;
+        }
+      }
+    }
+
+    div {
+      position: relative;
+      @extend %img;
+      padding-bottom: 56.25%;
+
+      &::before {
+        content: '';
+        @extend %pos;
+        background: $primary;
+        opacity: 0;
+        transition: 1s;
+        z-index: 2;
+      }
+
+      &:hover {
+
+        &::before {
+          opacity: .8;
+        }
+      }
+    }
+  }
+}
+
+

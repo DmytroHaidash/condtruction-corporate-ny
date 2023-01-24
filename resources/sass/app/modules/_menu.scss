@@ -1,0 +1,81 @@
+.burger-menu {
+  position: relative;
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 100;
+  cursor: pointer;
+
+  @media (min-width: map_get($grid-breakpoints, xxl)) {
+    display: none;
+  }
+
+  &.active {
+
+    .line {
+      width: 0;
+
+      &--close {
+        width: 100%;
+      }
+    }
+  }
+
+  .line {
+    width: 100%;
+    height: 3px;
+    background: $primary;
+    transition: .5s;
+
+    &--close {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+    }
+
+    &--left {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    &--right {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+  }
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 99;
+  background: $secondary;
+
+  .menu-list {
+    display: block;
+    margin-bottom: 30px;
+
+    li {
+      margin-bottom: 15px;
+      margin-right: 0;
+      text-align: center;
+
+      a {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .contacts-item {
+    margin-bottom: 15px;
+  }
+}

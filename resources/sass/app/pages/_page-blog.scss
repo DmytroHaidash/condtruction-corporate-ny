@@ -1,0 +1,34 @@
+#page-blog {
+
+  .blog-card {
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+      max-width: 100%;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      min-height: 650px;
+    }
+
+    .title {
+      margin-bottom: -10px;
+      font-size: $h4-font-size;
+
+      @media (min-width: map_get($grid-breakpoints, xl)) {
+        font-size: $h3-font-size;
+      }
+
+      @media (min-width: map_get($grid-breakpoints, xxl)) {
+        margin-bottom: -40px;
+      }
+    }
+
+    .image {
+
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}

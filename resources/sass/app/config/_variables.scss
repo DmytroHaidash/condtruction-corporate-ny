@@ -1,0 +1,49 @@
+$light: #5F646E;
+$primary: #6BE0D9;
+$dark: #181A1E;
+$secondary: #1E2127;
+
+$body-color: #A1A8B5;
+$body-bg: $dark;
+
+$font-size-base: 1rem;
+$font-family-base: 'FuturaLightCTT', sans-serif;
+$headings-font-family: 'FuturaDemiC', sans-serif;
+$headings-color: #fff;
+
+$link-color: #fff;
+$link-hover-decoration: none;
+$input-btn-focus-width: 0;
+$input-btn-focus-color: rgba(#fff, 0);
+$input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color;
+
+$breadcrumb-padding-y: 0;
+$breadcrumb-padding-x: 0;
+$breadcrumb-item-padding: .714rem;
+$breadcrumb-margin-bottom: 1.875rem;
+$breadcrumb-bg: transparent;
+$breadcrumb-divider-color: #A1A8B5;
+$breadcrumb-active-color: #A1A8B5;
+$breadcrumb-border-radius: 0;
+$breadcrumb-divider: '';
+
+$border-width: 0;
+
+$border-radius: 4px;
+$btn-padding-x: 15px;
+$btn-padding-y: 20px;
+
+$h1-font-size: $font-size-base * 5;
+$h2-font-size: $font-size-base * 3.76;
+$h3-font-size: $font-size-base * 1.875;
+$h4-font-size: $font-size-base * 1.25;
+$h5-font-size: $font-size-base * 1.125;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1366px
+) !default;

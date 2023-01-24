@@ -1,0 +1,140 @@
+#single-blog {
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .decor-bg {
+    position: absolute;
+    top: 150px;
+    left: -40px;
+    width: 280px;
+    height: 280px;
+    background: $secondary;
+    z-index: -2;
+    display: none;
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+      display: block;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      display: block;
+      width: 340px;
+      height: 360px;
+      top: 70px;
+    }
+  }
+
+  .blog-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+      flex-direction: row;
+    }
+
+    .image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      div {
+        position: relative;
+        &::before {
+          content: '';
+          @extend %pos;
+          height: 0;
+          background: $primary;
+          z-index: 2;
+        }
+      }
+
+      img {
+
+        @media (min-width: map_get($grid-breakpoints, sm)) {
+          width: 500px;
+          min-height: 380px;
+        }
+
+        @media (min-width: map_get($grid-breakpoints, lg)) {
+          width: 400px;
+          min-height: 280px;
+        }
+
+        @media (min-width: map_get($grid-breakpoints, xl)) {
+          width: 500px;
+          min-height: 380px;
+        }
+      }
+    }
+
+    .content {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 40px 0;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 1px;
+        background: $light;
+        transition: 1s;
+        transition-delay: .4s;
+      }
+
+
+      @media (min-width: map_get($grid-breakpoints, lg)) {
+        margin-left: 40px;
+      }
+
+      @media (min-width: map_get($grid-breakpoints, xl)) {
+        margin-left: 70px;
+      }
+
+      .data {
+        font-family: $headings-font-family;
+        margin-bottom: 20px;
+      }
+
+      .title {
+        color: $primary;
+        margin-bottom: 25px;
+      }
+
+      .description {
+        margin-bottom: 25px;
+
+        p {
+          margin-bottom: 15px;
+          color: #fff;
+        }
+      }
+    }
+
+    &.start-animation {
+
+      .image {
+
+        div {
+
+          &::before {
+            animation: toggleHeight 1.2s ease-in-out;
+          }
+        }
+      }
+
+      .content {
+
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

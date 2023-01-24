@@ -1,0 +1,122 @@
+#blog {
+  padding: 130px 0;
+  border-bottom: 5px solid #fff;
+  background: url('../images/main/blog-bg.jpg') 50% 50% /cover no-repeat;
+
+  .section-title {
+    margin-bottom: 30px;
+  }
+
+  .description-section {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    p {
+      position: relative;
+      font-size: 1.125rem;
+      padding: 10px 15px;
+      margin-bottom: 25px;
+
+      @media (min-width: map_get($grid-breakpoints, sm)) {
+        margin-bottom: 0;
+        padding: 10px 30px;
+        max-width: 80%;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 4px;
+        background: $primary;
+      }
+    }
+
+    &.start-animation {
+
+      p {
+
+        &::before {
+          animation: toggleWidth 1.5s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+.blog-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 490px;
+  margin: 40px auto 0;
+  z-index: 5;
+  max-width: 350px;
+
+  .title {
+    padding: 30px 30px 0;
+    margin-bottom: -40px;
+    transition: .5s;
+  }
+
+  .image {
+    @extend %pos;
+    top: auto;
+    height: 95%;
+    @extend %img;
+    z-index: -1;
+  }
+
+  &::before {
+    content: '';
+    @extend %pos;
+    top: 70px;
+    opacity: 1;
+    background: $secondary;
+    z-index: -10;
+    transition: .5s;
+  }
+
+  &::after {
+    content: '';
+    @extend %pos;
+    top: auto;
+    height: 0;
+    background: $primary;
+    z-index: -5;
+    transition: .5s;
+  }
+
+  &:hover {
+
+    .title {
+      color: $dark;
+    }
+
+    &::after {
+      height: 100%;
+    }
+
+    &::before {
+      opacity: 0;
+    }
+  }
+
+  &.start-animation {
+
+    &::after {
+      animation: toggleHeight 1.5s ease-in-out;
+    }
+  }
+}
+

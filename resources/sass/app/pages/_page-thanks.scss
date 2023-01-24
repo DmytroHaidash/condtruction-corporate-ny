@@ -1,0 +1,60 @@
+#page-thanks {
+  height: calc(100vh - 55px);
+  min-height: 600px;
+
+  .thanks-item {
+    color: #fff;
+
+    .title {
+      margin-bottom: 15px;
+    }
+
+    .subtitle {
+      color: $primary;
+      margin-bottom: 25px;
+    }
+  }
+
+  .decor-list {
+    @extend %pos;
+    z-index: -2;
+    display: none;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      display: block;
+    }
+
+    li {
+      position: absolute;
+      background: $secondary;
+
+      &:nth-of-type(1) {
+        top: 15%;
+        left: 10%;
+        width: 300px;
+        height: 300px;
+      }
+
+      &:nth-of-type(2) {
+        top: 25%;
+        right: 10%;
+        width: 150px;
+        height: 300px;
+      }
+
+      &:nth-of-type(3) {
+        left: 30%;
+        width: 150px;
+        height: 100px;
+        bottom: 15%;
+      }
+
+      &:nth-of-type(4) {
+        right: 30%;
+        width: 200px;
+        height: 180px;
+        bottom: 20%;
+      }
+    }
+  }
+}

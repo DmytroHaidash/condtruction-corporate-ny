@@ -1,0 +1,39 @@
+<!-- App-footer -->
+<footer id="app-footer">
+    <div class="container-fluid px-5">
+        <div class="row justify-content-between">
+            <div class="footer-item footer-copyright">
+                2019 Все права защищены
+            </div>
+            <ul class="social-list">
+                <li>
+                    <a href="{{app('settings')->facebook}}">
+                        <svg width="15" height="15">
+                            <use xlink:href="#facebook-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{app('settings')->instagram}}">
+                        <svg width="15" height="15">
+                            <use xlink:href="#instagram-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{app('settings')->twitter}}">
+                        <svg width="15" height="15">
+                            <use xlink:href="#twitter-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <div class="footer-item mt-2 mt-sm-0">
+                Разработка и дизайн <a href="https://impressionbureau.pro/" target="_blank">Impression Bureau</a>
+            </div>
+        </div>
+    </div>
+    <!-- Data Maps -->
+    <div id="coordinateLat" data-coordinate="{{app('settings')->latitude}}"></div>
+    <div id="coordinateLon" data-coordinate="{{app('settings')->longitude}}"></div>
+</footer>

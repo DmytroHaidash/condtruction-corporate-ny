@@ -1,0 +1,20 @@
+#app-footer {
+  padding: 15px 0;
+  background: #121316;
+
+  .footer-item {
+    color: $light;
+    font-size: 0.8125rem;
+
+    a {
+      color: $primary;
+    }
+  }
+
+  &.app-footer-secondary {
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      height: 55px;
+    }
+  }
+}

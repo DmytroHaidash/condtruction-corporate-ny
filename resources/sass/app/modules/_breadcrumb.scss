@@ -1,0 +1,26 @@
+.breadcrumb {
+
+  li {
+
+    a {
+      font-family: $font-family-base;
+      color: inherit;
+      border-bottom: 1px dashed transparent;
+      transition: .5s;
+
+      &:hover {
+        color: #fff;
+        border-color: $primary;
+      }
+    }
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  margin: 0 5px;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-left: 4px solid $breadcrumb-divider-color;
+  border-bottom: 4px solid transparent;
+}

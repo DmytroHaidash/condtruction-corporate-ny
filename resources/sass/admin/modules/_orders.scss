@@ -1,0 +1,11 @@
+.order {
+  &-no_dial {
+    background-color: lighten($warning, 30%) !important;
+  }
+  &-finished {
+    background-color: lighten($success, 20%) !important;
+  }
+  &-rejected {
+    background-color: lighten($danger, 35%) !important;
+  }
+}

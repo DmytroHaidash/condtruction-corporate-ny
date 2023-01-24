@@ -1,0 +1,71 @@
+.custom-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 40px 30px 5px;
+  width: 95%;
+  max-width: 440px;
+  background: $primary;
+  z-index: 120;
+  border-radius: 3px;
+  transition: .5s;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -300%);
+
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+    transform: translate(-50%, -50%);
+  }
+
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    &:hover {
+
+      .line {
+        opacity: 1;
+      }
+    }
+
+    .line {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 20px;
+      height: 1px;
+      background: #fff;
+      opacity: .7;
+
+      &--left {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+
+      &--right {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+    }
+  }
+}
+
+
+.modal-mask {
+  @extend %pos;
+  position: fixed;
+  background: rgba($dark, .8);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 119;
+  transition: .5s;
+
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+}

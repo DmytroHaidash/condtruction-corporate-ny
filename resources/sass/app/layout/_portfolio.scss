@@ -1,0 +1,256 @@
+#portfolio-main {
+  padding: 200px 0;
+
+  @media (min-width: map_get($grid-breakpoints, lg)) {
+    padding: 200px 30px;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding: 200px 80px;
+  }
+
+
+  .slider-nav {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    bottom: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 20;
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      top: -15px;
+      bottom: 30px;
+    }
+  }
+
+  .slider-nav-counter {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      padding-left: 40px;
+    }
+
+    .decor-line {
+      width: 130px;
+      height: 1px;
+      background: $light;
+    }
+  }
+
+  .slider-nav-arrow {
+    padding-left: 20px;
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+      padding-left: 110px;
+    }
+  }
+}
+
+.portfolio-slider {
+  position: relative;
+  z-index: 10;
+
+  &--end {
+
+    .portfolio-item {
+      align-items: flex-end;
+
+      @media (min-width: map_get($grid-breakpoints, xl)) {
+        padding-left: 40px;
+      }
+    }
+
+    .decor-title {
+      left: 35px;
+      transform: rotate(-90deg);
+      transform-origin: 0 50%;
+    }
+
+    &::before {
+      right: 5%;
+    }
+  }
+
+  &--start {
+
+    .portfolio-item {
+      align-items: flex-start;
+
+      @media (min-width: map_get($grid-breakpoints, xl)) {
+        padding-right: 40px;
+      }
+
+    }
+
+    .decor-title {
+      right: 0;
+      transform: rotate(90deg) translateY(-100%);
+      transform-origin: 83% 0;
+    }
+
+    &::before {
+      left: 5%;
+    }
+  }
+
+  .portfolio-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 600px;
+
+    .place {
+      position: relative;
+      font-family: $headings-font-family;
+      color: #fff;
+      margin-bottom: 15px;
+      z-index: 10;
+      transform: translateY(-50%);
+      transition: 1s;
+    }
+
+    .image {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      @extend %img;
+      z-index: 5;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 40%;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+      }
+
+      &::after {
+        content: '';
+        @extend %pos;
+        height: 0;
+        background: $primary;
+      }
+    }
+
+    .description {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      background: $dark;
+      border-top: 4px solid $primary;
+      padding: 40px;
+      z-index: 10;
+      transform: translateY(100%);
+      transition: 1s;
+
+      @media (min-width: map_get($grid-breakpoints, sm)) {
+        flex-direction: row;
+      }
+
+      @media (min-width: map_get($grid-breakpoints, xl)) {
+        width: 600px;
+        padding: 50px;
+        margin-top: -270px;
+      }
+
+      .logo {
+        margin-bottom: 15px;
+
+        @media (min-width: map_get($grid-breakpoints, sm)) {
+          margin-right: 30px;
+          margin-bottom: 0;
+        }
+
+        img {
+          width: auto;
+        }
+      }
+
+      .content {
+
+        @media (min-width: map_get($grid-breakpoints, sm)) {
+          padding-left: 30px;
+          border-left: 1px solid #292C31;
+        }
+
+        .subtitle {
+          font-family: $headings-font-family;
+          color: $light;
+          margin-bottom: 15px;
+        }
+
+        .title {
+          margin-bottom: 20px;
+        }
+
+        p {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .decor-title {
+      display: none;
+      position: absolute;
+      bottom: 20px;
+      font-size: 2.5rem;
+      font-family: $headings-font-family;
+      width: 500px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      @media (min-width: map_get($grid-breakpoints, xl)) {
+        display: block;
+      }
+
+      &--white {
+        color: #fff;
+        z-index: 2;
+      }
+
+      &--transparent {
+        color: transparent;
+        -webkit-text-stroke: 1px #fff;
+        text-stroke: 1px #fff;
+        z-index: 10;
+      }
+    }
+
+    &.is-selected {
+
+      .place {
+        transform: translateY(0);
+      }
+      .image {
+        &::after {
+          animation: toggleHeight 1.3s linear;
+        }
+      }
+      .description {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    bottom: -30px;
+    background: $secondary;
+    width: 35%;
+    z-index: -4;
+  }
+}

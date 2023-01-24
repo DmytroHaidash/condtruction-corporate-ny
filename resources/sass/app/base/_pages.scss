@@ -1,0 +1,40 @@
+.page-section {
+  padding: 100px 0;
+
+  @media (min-width: map_get($grid-breakpoints, sm)) {
+    padding: 130px 50px;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, lg)) {
+    padding: 130px 80px;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding: 130px;
+  }
+
+  .logo {
+    display: none;
+    justify-content: flex-end;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      display: flex;
+    }
+
+    svg {
+      width: auto;
+    }
+  }
+
+  .back-navigation {
+    margin-top: 10px;
+  }
+
+  &-portfolio {
+
+
+    .logo {
+      justify-content: flex-start;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+#page-portfolio {
+
+	.portfolio-slider {
+		margin-bottom: 150px;
+
+		.portfolio-item {
+
+			.place {
+				transform: translateY(0);
+			}
+
+			.description {
+				position: relative;
+				transform: translateY(0);
+			}
+		}
+	}
+
+	.section-title {
+		position: relative;
+		z-index: 30;
+
+		@media (min-width: map_get($grid-breakpoints, sm)) {
+			font-size: 4.8rem;
+		}
+
+		@media (min-width: map_get($grid-breakpoints, lg)) {
+			font-size: $h1-font-size;
+		}
+	}
+}
