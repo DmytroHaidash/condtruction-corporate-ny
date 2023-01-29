@@ -6,6 +6,7 @@ use App\Http\Resources\ImageResource;
 use App\Http\Resources\PortfolioResource;
 use App\Traits\SluggableTrait;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Spatie\Image\Manipulations;
 use Spatie\MediaLibrary\HasMedia\HasMedia;
@@ -20,6 +21,14 @@ class Portfolio extends Model implements HasMedia
         'slug',
         'video',
     ];
+
+    /**
+     * @return MorphMany
+     */
+    public function meta(): MorphMany
+    {
+        return $this->morphMany(Meta::class, 'metable');
+    }
 
     /**
      * @return string

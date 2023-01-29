@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Traits\SluggableTrait;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Spatie\Image\Manipulations;
 use Spatie\MediaLibrary\HasMedia\HasMedia;
 use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
@@ -17,6 +18,13 @@ class Service extends Model implements HasMedia
         'slug',
     ];
 
+    /**
+     * @return MorphMany
+     */
+    public function meta(): MorphMany
+    {
+        return $this->morphMany(Meta::class, 'metable');
+    }
 
     /**
      * @return string
