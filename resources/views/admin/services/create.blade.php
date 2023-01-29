@@ -35,6 +35,7 @@
                         @endforeach
                     </block-editor>
                     <hr class="my-5">
+                    @includeIf('partials.admin.meta', ['meta' => null])
                 </div>
                 <div class="col-md-4">
                     <image-uploader name="service" ratio="67%"></image-uploader>

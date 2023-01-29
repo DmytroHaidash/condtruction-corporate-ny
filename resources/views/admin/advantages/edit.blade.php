@@ -41,6 +41,7 @@
                     @endforeach
                 </block-editor>
                 <hr class="my-5">
+                @includeIf('partials.admin.meta', ['meta' => $advantage->meta()->first()])
             </div>
             <div class="col-md-4">
                 <image-uploader ratio="67%" name="advantage" image-id="{{ optional($advantage->getFirstMedia('advantage'))->id }}"

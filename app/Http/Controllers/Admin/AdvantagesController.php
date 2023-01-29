@@ -40,6 +40,14 @@ class AdvantagesController extends Controller
             $advantage->addMediaFromRequest('advantage')
                 ->toMediaCollection('advantage');
         }
+
+        if ($request->has('meta')) {
+            foreach ($request->get('meta') as $key => $meta) {
+                $advantage->meta()->create([
+                    $key => $meta
+                ]);
+            }
+        }
         return \redirect()->route('admin.advantages.index')
             ->with('message', 'Successfully created.');
     }
@@ -68,6 +76,16 @@ class AdvantagesController extends Controller
             $advantage->clearMediaCollection('advantage');
             $advantage->addMediaFromRequest('advantage')
                 ->toMediaCollection('advantage');
+        }
+
+        if($request->has('meta')){
+            foreach ($request->get('meta') as $key => $meta) {
+                $advantage->meta()->updateOrCreate([
+                    'metable_id' => $advantage->id
+                ], [
+                    $key => $meta
+                ]);
+            }
         }
         return \redirect()->route('admin.advantages.index')
             ->with('message', 'Successfully updated.');

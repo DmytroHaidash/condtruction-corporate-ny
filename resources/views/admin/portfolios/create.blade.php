@@ -48,6 +48,7 @@
                                class="form-control{{ $errors->has('video') ? ' is-invalid' : '' }}"
                                value="{{ old('video') }}">
                     </div>
+                    @includeIf('partials.admin.meta', ['meta' => null])
                 </div>
                 <div class="col-md-4">
                     <label for="portfolio">Logo</label>

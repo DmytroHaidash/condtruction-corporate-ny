@@ -31,6 +31,15 @@ class PagesController extends Controller
                 ->toMediaCollection('page');
         }
 
+        if($request->has('meta')){
+            foreach ($request->get('meta') as $key => $meta) {
+                $page->meta()->updateOrCreate([
+                    'metable_id' => $page->id
+                ], [
+                    $key => $meta
+                ]);
+            }
+        }
         return \redirect()->route('admin.pages.index')
             ->with('message', 'Successfully updated.');
     }

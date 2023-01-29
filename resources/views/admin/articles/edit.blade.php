@@ -35,16 +35,16 @@
                     @endforeach
                 </block-editor>
 
-                <select class="form-control position-relative mt-3" name="category_id" id="category_id" required>
-                    <option value="" disabled selected style='display:none;'>Select category</option>
-                    @foreach($categories as $category)
-                        <option value="{{ $category->id }}"{{ $category->id === $article->category->id ? ' selected' : '' }}>
-                            {{ $category->title }}
-                        </option>
-                    @endforeach
-                </select>
+                {{--<select class="form-control position-relative mt-3" name="category_id" id="category_id" required>--}}
+                    {{--<option value="" disabled selected style='display:none;'>Select category</option>--}}
+                    {{--@foreach($categories as $category)--}}
+                        {{--<option value="{{ $category->id }}"{{ $category->id === $article->category->id ? ' selected' : '' }}>--}}
+                            {{--{{ $category->title }}--}}
+                        {{--</option>--}}
+                    {{--@endforeach--}}
+                {{--</select>--}}
                 <hr class="my-5">
-
+                @includeIf('partials.admin.meta', ['meta' => $article->meta()->first()])
             </div>
             <div class="col-md-4">
                 <image-uploader ratio="67%" name="article" image-id="{{ optional($article->getFirstMedia('article'))->id }}"

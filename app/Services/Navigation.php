@@ -20,11 +20,11 @@ class Navigation
                 'route' => 'articles',
                 'icon' => 'i-newspaper',
             ]),
-            new NavItem([
-                'name' => 'Categories',
-                'route' => 'categories',
-                'icon' => 'i-bullet-list',
-            ]),
+//            new NavItem([
+//                'name' => 'Categories',
+//                'route' => 'categories',
+//                'icon' => 'i-bullet-list',
+//            ]),
             new NavItem([
                 'name' => 'Services',
                 'route' => 'services',

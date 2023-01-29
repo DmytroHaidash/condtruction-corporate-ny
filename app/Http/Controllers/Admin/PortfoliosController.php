@@ -46,6 +46,14 @@ class PortfoliosController extends Controller
                 ->toMediaCollection('portfolio');
         }
         $this->handleMedia($request, $portfolio);
+
+        if ($request->has('meta')) {
+            foreach ($request->get('meta') as $key => $meta) {
+                $portfolio->meta()->create([
+                    $key => $meta
+                ]);
+            }
+        }
         return \redirect()->route('admin.portfolios.index')
             ->with('message', 'Successfully created.');
     }
@@ -82,6 +90,16 @@ class PortfoliosController extends Controller
         }
 
         $this->handleMedia($request, $portfolio);
+
+        if($request->has('meta')){
+            foreach ($request->get('meta') as $key => $meta) {
+                $portfolio->meta()->updateOrCreate([
+                    'metable_id' => $portfolio->id
+                ], [
+                    $key => $meta
+                ]);
+            }
+        }
         return \redirect()->route('admin.portfolios.index')
             ->with('message', 'Successfully updated.');
     }

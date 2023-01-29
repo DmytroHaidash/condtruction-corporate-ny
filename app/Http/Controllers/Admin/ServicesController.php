@@ -39,6 +39,14 @@ class ServicesController extends Controller
             $service->addMediaFromRequest('service')
                 ->toMediaCollection('service');
         }
+
+        if ($request->has('meta')) {
+            foreach ($request->get('meta') as $key => $meta) {
+                $service->meta()->create([
+                    $key => $meta
+                ]);
+            }
+        }
         return \redirect()->route('admin.services.index')
             ->with('message', 'Successfully created.');
     }
@@ -67,6 +75,16 @@ class ServicesController extends Controller
             $service->clearMediaCollection('service');
             $service->addMediaFromRequest('service')
                 ->toMediaCollection('service');
+        }
+
+        if($request->has('meta')){
+            foreach ($request->get('meta') as $key => $meta) {
+                $service->meta()->updateOrCreate([
+                    'metable_id' => $service->id
+                ], [
+                    $key => $meta
+                ]);
+            }
         }
         return \redirect()->route('admin.services.index')
             ->with('message', 'Successfully updated.');
