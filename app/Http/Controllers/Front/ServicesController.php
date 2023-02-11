@@ -25,6 +25,6 @@ class ServicesController extends Controller
 
     public function items()
     {
-        return response()->json(new ServicesPaginatedResource(Service::paginate(5)));
+        return response()->json(new ServicesPaginatedResource(Service::paginate(10)));
     }
 }
