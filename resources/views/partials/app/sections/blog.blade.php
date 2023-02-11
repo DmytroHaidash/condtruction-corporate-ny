@@ -15,7 +15,7 @@
             </div>
             @foreach($blog as $item)
                 <div class="col-sm-7 col-xl-4">
-                    <a href="{{ route('app.articles.index', ['id'=>$item->id] )}}" class="blog-card">
+                    <a href="{{ route('app.articles.show', $item)}}" class="blog-card">
                         <h4 class="title">
                             {{ $item->title }}
                         </h4>

@@ -4,7 +4,7 @@ return [
     'back' => 'Back',
     'main' => 'Main',
     'portfolio' => 'Our projects',
-    'blog' => 'The activity',
+    'blog' => 'Blog',
     'articles' => 'Articles',
     'service' => 'Services',
 

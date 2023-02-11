@@ -9,6 +9,7 @@ return [
         'phone' => 'Phone',
         'feedback' => 'To contact us',
         'service' => 'Services',
+        'home' => "Home",
     ],
     'contacts' =>[
         'phone' => 'Phone',
@@ -42,8 +43,8 @@ return [
         'button' => 'Contact',
     ],
     'blog' => [
-        'title' => 'The activity',
-        'description' => 'View all activities in all categories',
+        'title' => 'Blog',
+        'description' => 'View all articles',
         'button' => 'Look',
         'more'=> 'More news',
         'read' => 'Learn more',

@@ -5,7 +5,7 @@
             <div class="col-sm-9 col-lg-6">
                 <div class="intro-item">
                     <div class="intro-item-logo">
-                        <img src="../../images/icon/intro-logo.png" alt="sensar">
+                        <img src="../../images/icon/intro-logo-2.png" alt="sensar">
                     </div>
                     <div class="intro-item-content">
                         <h1 class="title">
@@ -15,7 +15,7 @@
                             <p>
                                 {!! app('settings')->content->description !!}
                             </p>
-                            <a href="#portfolio-main" class="link-more scroll-link">
+                            <a href="#contacts" class="link-more scroll-link">
                                 @lang('pages.portfolio.more')
                                 <svg width="25" height="10">
                                     <use xlink:href="#arrow-next"></use>
@@ -32,7 +32,7 @@
             </div>
         </div>
     </div>
-    <div class="decor-circle decor-circle--big">
+   {{-- <div class="decor-circle decor-circle--big">
         <svg>
             <use xlink:href="#big-circle"></use>
         </svg>
@@ -47,5 +47,5 @@
     </div>
     <div class="decor-cloud decor-cloud--2">
         <img src="../../images/icon/intro-cloud-1.png" alt="cloud">
-    </div>
+    </div>--}}
 </section>

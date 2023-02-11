@@ -10,6 +10,11 @@
                 <nav class="header-nav">
                     <ul class="menu-list">
                         <li>
+                            <a href="{{ route('app.home') }}">
+                                @lang('pages.header.home')
+                            </a>
+                        </li>
+                        <li>
                             <a href="{{ route('app.pages.about') }}">
                                 @lang('pages.header.about')
                             </a>
@@ -20,7 +25,7 @@
                             </a>
                         </li>--}}
                         <li>
-                            <a href="{{ route('app.blog') }}">
+                            <a href="{{ route('app.articles.index') }}">
                                 @lang('pages.header.blog')
                             </a>
                         </li>
@@ -69,7 +74,7 @@
                         </ul>
                     </div>
                     <a href="/" class="logo">
-                        <img src="/images/icon/logo.png" alt="logo">
+                        <img src="/images/icon/GE-03-1.png" alt="logo">
                     </a>
                 </div>
             </div>
@@ -128,6 +133,11 @@
         <div class="menu-wrap">
             <ul class="menu-list">
                 <li>
+                    <a href="{{ route('app.home') }}">
+                        @lang('pages.header.home')
+                    </a>
+                </li>
+                <li>
                     <a href="{{ route('app.pages.about') }}">
                         @lang('pages.header.about')
                     </a>
@@ -138,7 +148,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('app.blog') }}">
+                    <a href="{{ route('app.articles.index') }}">
                         @lang('pages.header.blog')
                     </a>
                 </li>

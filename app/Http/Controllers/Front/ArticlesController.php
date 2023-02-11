@@ -13,11 +13,10 @@ class ArticlesController extends Controller
 {
     public function index()
     {
-        $category = Category::where('id', request()->id)->first();
-        $articles = Article::where('category_id', $category->id)->get();
+        $articles = Article::query()->get();
 
         $feedback = Banner::where('id', 3)->first();
-        return \view('app.articles.index', compact('articles', 'category', 'feedback'));
+        return \view('app.articles.index', compact('articles', 'feedback'));
     }
 
     public function show(Article $article)

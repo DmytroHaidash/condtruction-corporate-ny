@@ -18,7 +18,7 @@ class SetLocale
         if (session()->has('locale')) {
             $locale = session()->get('locale', config('app.locale'));
         } else {
-            $locale = 'uk';
+            $locale = 'en';
         }
 
         if (app('router')->currentRouteNamed('admin.*')) {

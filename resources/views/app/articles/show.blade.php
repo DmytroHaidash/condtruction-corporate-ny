@@ -9,7 +9,6 @@
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="/">@lang('breadcrumb.main')</a></li>
                             <li class="breadcrumb-item"><a href="{{ route('app.blog') }}">@lang('breadcrumb.blog')</a></li>
-                            <li class="breadcrumb-item"><a href="{{ route('app.articles.index', ['id'=>$article->category_id] )}}">{{$article->category->title}}</a></li>
                             <li class="breadcrumb-item active">{{ $article->title }}</li>
                         </ol>
                     </nav>
@@ -36,9 +35,6 @@
                             {{ $article->title }}
                         </h1>
                         <div class="description">
-                            <div class="subtitle">
-                                {{$article->category->title}}
-                            </div>
                             {!! $article->content->body !!}
                         </div>
                     </div>

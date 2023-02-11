@@ -11,7 +11,7 @@
             <div class="col-lg-6">
                 <div class="contacts-wrapper">
                     <a href="/" class="logo">
-                        <img src="/images/icon/logo.png" alt="logo">
+                        <img src="/images/icon/GE-03-1.png" alt="logo">
                     </a>
                     <h2 class="title">
                         @lang('pages.contacts.contacts')

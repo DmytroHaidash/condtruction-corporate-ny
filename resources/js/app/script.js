@@ -33,7 +33,7 @@ require('@fancyapps/fancybox');
 
             $('body,html').animate({
                 scrollTop: top
-            }, 1500);
+            }, 500);
         }
     });
 
@@ -131,15 +131,15 @@ require('@fancyapps/fancybox');
             $('#intro').addClass('finish-animate');
             ScrollReveal().reveal('.intro-item', {
                 origin: 'left',
-                delay: 300,
+                delay: 100,
                 distance: '500px',
             });
             ScrollReveal().reveal('.intro-image', {
                 origin: 'right',
-                delay: 400,
+                delay: 200,
                 distance: '500px',
             });
-        }, 1200)
+        }, 100)
     });
 
     /**
