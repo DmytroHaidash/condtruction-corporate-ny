@@ -60,4 +60,7 @@ return [
         'more'=> 'More services',
         'read' => 'Learn more',
     ],
+    'map' => [
+        'click' => 'Click to use the map'
+    ]
 ];

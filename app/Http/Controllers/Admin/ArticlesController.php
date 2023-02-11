@@ -37,7 +37,7 @@ class ArticlesController extends Controller
     public function store(Request $request)
     {
 
-        $article = Article::create($request->only('slug', 'category_id'))->makeTranslation();
+        $article = Article::create()->makeTranslation();
 
         if ($request->hasFile('article')) {
             $article->addMediaFromRequest('article')

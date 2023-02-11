@@ -30,7 +30,7 @@
                     <div class="contacts-description">
                         <div class="map-contacts">
                             <div class="map-mask">
-                                Нажмите для использования карты
+                                @lang('pages.map.click')
                             </div>
                             <div id="contacts-page-maps"></div>
                         </div>

@@ -47,3 +47,10 @@
 
     {{--@include('partials.app.sections.feedback-secondary')--}}
 @endsection
+
+@section('meta')
+    @includeIf('partials.app.layout.meta', ['meta' => $article->meta()->first()])
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{{ $article->preview }}">
+    <meta property="article:author" content="Green estate">
+@endsection

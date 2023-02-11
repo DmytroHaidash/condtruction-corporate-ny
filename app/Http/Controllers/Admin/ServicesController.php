@@ -33,7 +33,7 @@ class ServicesController extends Controller
      */
     public function store(Request $request)
     {
-        $service = Service::create($request->only('slug'))->makeTranslation();
+        $service = Service::create()->makeTranslation();
 
         if ($request->hasFile('service')) {
             $service->addMediaFromRequest('service')

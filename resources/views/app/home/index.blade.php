@@ -11,3 +11,11 @@
     @include('partials.app.sections.about')
     @includeWhen($blog->count(), 'partials.app.sections.blog')
 @endsection
+
+
+@section('meta')
+    @includeIf('partials.app.layout.meta', ['meta' => $about->meta()->first()])
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{{ $about->banner }}">
+    <meta property="article:author" content="Green estate">
+@endsection

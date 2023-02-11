@@ -43,3 +43,11 @@
         </div>
     </section>
 @endsection
+
+
+@section('meta')
+    @includeIf('partials.app.layout.meta', ['meta' => $service->meta()->first()])
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{{ $service->preview }}">
+    <meta property="article:author" content="Green estate">
+@endsection

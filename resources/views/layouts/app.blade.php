@@ -28,6 +28,7 @@
 
     <link rel="prefetch" href="{{ asset('css/app.css') }}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @yield('meta')
 </head>
 <body>
 @includeIf('partials.app.layout.icons')
