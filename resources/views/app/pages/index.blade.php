@@ -47,7 +47,7 @@
 @endsection
 
 @section('meta')
-    @includeIf('partials.app.layout.meta', ['meta' => $article->meta()->first()])
+    @includeIf('partials.app.layout.meta', ['meta' => $page->meta()->first()])
     <meta property="og:type" content="article">
     <meta property="og:image" content="{{ $page->preview }}">
     <meta property="article:author" content="Green estate">
