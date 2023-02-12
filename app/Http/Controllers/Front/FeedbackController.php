@@ -13,6 +13,7 @@ class FeedbackController extends Controller
         Feedback::create([
             'name' => $request->input('name'),
             'phone' => $request->input('phone'),
+            'email' => $request->input('email'),
         ]);
         return \view('app.pages.thanks');
     }

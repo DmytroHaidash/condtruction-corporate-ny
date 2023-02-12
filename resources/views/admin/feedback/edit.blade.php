@@ -12,6 +12,8 @@
                 </p>
                 <p class="font-weight-bold mb-2">Phone</p>
                 <p class="mb-1">{{ $feedback->phone }}</p>
+                <p class="font-weight-bold mb-2">Email</p>
+                <p class="mb-1">{{ $feedback->email }}</p>
                 <p class="font-weight-bold mb-2">Created at</p>
                 <p class="mb-1">{{ $feedback->created_at->format(('d.m.Y \в H:i')) }}</p>
             </div>

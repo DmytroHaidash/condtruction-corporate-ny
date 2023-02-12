@@ -36,9 +36,11 @@ return [
                  call you back',
         'name' => 'Your name',
         'phone' => 'Your phone',
+        'email' => "Your email",
         'placeholder' =>[
             'name' => 'Name',
             'phone' => 'Phone',
+            'email' => "Email",
         ],
         'button' => 'Contact',
     ],
