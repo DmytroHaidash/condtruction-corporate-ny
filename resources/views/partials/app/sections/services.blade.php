@@ -19,8 +19,8 @@
             </div>
             @endforeach
         </div>
-        <div class="d-flex justify-content-center mb-4">
+        {{--<div class="d-flex justify-content-center mb-4">
             <a href="{{route('app.services.index')}}" class="btn btn-primary">@lang('pages.blog.read')</a>
-        </div>
+        </div>--}}
     </div>
 </section>

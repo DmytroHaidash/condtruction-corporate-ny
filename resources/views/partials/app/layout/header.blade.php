@@ -15,6 +15,11 @@
                             </a>
                         </li>
                         <li>
+                            <a href="{{route('app.services.index')}}">
+                                @lang('pages.header.service')
+                            </a>
+                        </li>
+                        <li>
                             <a href="{{ route('app.pages.about') }}">
                                 @lang('pages.header.about')
                             </a>
@@ -34,11 +39,7 @@
                                 @lang('pages.header.contacts')
                             </a>
                         </li>
-                        <li>
-                            <a href="{{route('app.services.index')}}">
-                                @lang('pages.header.service')
-                            </a>
-                        </li>
+
                     </ul>
                 </nav>
                 <div class="burger-menu">
@@ -138,6 +139,11 @@
                     </a>
                 </li>
                 <li>
+                    <a href="{{route('app.services.index')}}">
+                        @lang('pages.header.service')
+                    </a>
+                </li>
+                <li>
                     <a href="{{ route('app.pages.about') }}">
                         @lang('pages.header.about')
                     </a>
@@ -157,11 +163,7 @@
                         @lang('pages.header.contacts')
                     </a>
                 </li>
-                <li>
-                    <a href="{{route('app.services.index')}}">
-                        @lang('pages.header.service')
-                    </a>
-                </li>
+
             </ul>
             <div class="menu-contacts">
                 <div class="contacts-item">

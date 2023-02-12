@@ -32,7 +32,7 @@
             </div>
         </div>
     </div>
-   {{-- <div class="decor-circle decor-circle--big">
+     <div class="decor-circle decor-circle--big">
         <svg>
             <use xlink:href="#big-circle"></use>
         </svg>
@@ -45,7 +45,7 @@
     <div class="decor-cloud decor-cloud--1">
         <img src="../../images/icon/intro-cloud-1.png" alt="cloud">
     </div>
-    <div class="decor-cloud decor-cloud--2">
+    {{--<div class="decor-cloud decor-cloud--2">
         <img src="../../images/icon/intro-cloud-1.png" alt="cloud">
     </div>--}}
 </section>
