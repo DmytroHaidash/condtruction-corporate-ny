@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
 use App\Models\Advantage;
+use App\Models\Article;
 use App\Models\Banner;
 use App\Models\Category;
 use App\Models\Page;
