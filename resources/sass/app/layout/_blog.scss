@@ -81,7 +81,7 @@
   .mask {
     @extend %pos;
     background: rgba(0,0,0,.5);
-    opacity: 0.9;
+    opacity: 0.1;
   }
 
   &::before {
