@@ -75,7 +75,7 @@
   .image {
     @extend %pos;
     top: auto;
-    height: 95%;
+    height: 100%;
     @extend %img;
     z-index: -1;
   }
