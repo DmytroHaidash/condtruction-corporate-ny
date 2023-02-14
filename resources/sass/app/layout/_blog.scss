@@ -64,7 +64,7 @@
   max-width: 350px;
 
   .title {
-    padding: 30px 30px 0;
+    padding: 50% 30px 0;
     margin-bottom: -40px;
     transition: .5s;
     text-transform: uppercase;
@@ -77,7 +77,11 @@
     height: 95%;
     @extend %img;
     z-index: -1;
-    opacity: 0.85;
+  }
+  .mask {
+    @extend %pos;
+    background: rgba(0,0,0,.5);
+    opacity: 0.9;
   }
 
   &::before {
@@ -106,7 +110,7 @@
       color: $primary;
     }
 
-    .image {
+    .mask {
       opacity: 0.6;
     }
     &::after {

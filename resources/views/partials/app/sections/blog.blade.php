@@ -19,7 +19,7 @@
                         <h4 class="title">
                             {{ $item->title }}
                         </h4>
-                        <div class="image" style="background-image: url({{ $item->getFirstMediaUrl('article') }});"></div>
+                        <div class="image mask" style="background-image: url({{ $item->getFirstMediaUrl('article') }});"></div>
                     </a>
                 </div>
             @endforeach
