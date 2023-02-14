@@ -7,21 +7,21 @@
             <ul class="social-list">
                 <li>
                     <a href="{{app('settings')->facebook}}">
-                        <svg width="15" height="15">
+                        <svg width="22" height="22">
                             <use xlink:href="#facebook-icon"></use>
                         </svg>
                     </a>
                 </li>
                 <li>
                     <a href="{{app('settings')->instagram}}">
-                        <svg width="15" height="15">
+                        <svg width="22" height="22">
                             <use xlink:href="#instagram-icon"></use>
                         </svg>
                     </a>
                 </li>
                 <li>
                     <a href="{{app('settings')->twitter}}">
-                        <svg width="15" height="15">
+                        <svg width="22" height="22">
                             <use xlink:href="#twitter-icon"></use>
                         </svg>
                     </a>
