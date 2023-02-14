@@ -49,11 +49,11 @@
           [{script: 'sub'}, {script: 'super'}],
           ['link', 'image', 'clean'],
         ],
-        placeholder: 'Описание',
+        placeholder: 'Description',
         uploadConfig: {
           action: '/admin/media/upload',
           res(res) {
-            return res.image;
+            return res.src;
           }
         }
       });
