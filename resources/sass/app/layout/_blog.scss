@@ -83,7 +83,8 @@
     @extend %pos;
     background: rgba(0,0,0,.5);
     opacity: 0.1;
-    z-index: 1
+    z-index: 1;
+    transition: .5s;
   }
 
   &::before {
@@ -113,7 +114,7 @@
     }
 
     .mask {
-      opacity: 0.6;
+      opacity: 0.9;
     }
     &::after {
     //  height: 100%;
