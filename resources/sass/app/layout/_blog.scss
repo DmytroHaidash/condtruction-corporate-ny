@@ -69,6 +69,7 @@
     transition: .5s;
     text-transform: uppercase;
     text-align: center;
+    z-index: 10;
   }
 
   .image {
@@ -82,6 +83,7 @@
     @extend %pos;
     background: rgba(0,0,0,.5);
     opacity: 0.1;
+    z-index: 1
   }
 
   &::before {
