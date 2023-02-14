@@ -15,11 +15,11 @@
                             <p>
                                 {!! app('settings')->content->description !!}
                             </p>
-                            <a href="#contacts" class="link-more scroll-link">
+                            <a href="#contacts" class="btn btn-primary ">
                                 @lang('pages.portfolio.more')
-                                <svg width="25" height="10">
+                                {{--<svg width="25" height="10">
                                     <use xlink:href="#arrow-next"></use>
-                                </svg>
+                                </svg>--}}
                             </a>
                         </div>
                     </div>
