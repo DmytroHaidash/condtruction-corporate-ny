@@ -36,10 +36,6 @@
             <a href="#" class="btn btn-outline-primary mb-4 mb-sm-0 mr-sm-4" v-if="!!url" @click.prevent="getPosts">
                 {{ $attrs.lang.more }}
             </a>
-            <a :href="blog" class="btn btn-primary">
-                {{ $attrs.lang.button }}
-
-            </a>
         </div>
     </div>
 
