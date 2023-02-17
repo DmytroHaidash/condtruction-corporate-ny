@@ -11,10 +11,10 @@
                     <div>
                         <div class="data">
                             <span v-if="item.lang === 'en'">
-                                {{item.createdEn}}
+                                <!--{{item.createdEn}}-->
                             </span>
                             <span v-else>
-                                {{item.created}}
+                                <!--{{item.created}}-->
                             </span>
                         </div>
                         <h3 class="title">

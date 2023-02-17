@@ -7,7 +7,7 @@ return [
         'blog' => 'Blog',
         'contacts' => 'Contacts',
         'phone' => 'Phone',
-        'feedback' => 'To contact us',
+        'feedback' => 'Contact us',
         'service' => 'Services',
         'home' => "Home",
     ],
