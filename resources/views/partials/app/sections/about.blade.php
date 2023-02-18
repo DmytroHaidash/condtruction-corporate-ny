@@ -23,7 +23,7 @@
                             {{ $about->title }}
                         </h2>
                         <div class="description">
-                            <p>{!! remove_tags($about->content->body, 200) !!}</p>
+                            <p>{!! $about->content->description ?? remove_tags($about->content->body, 200) !!}</p>
                             <a href="{{route('app.pages.about')}}" class="link-more">
                                 @lang('pages.blog.read')
                                 <svg width="25" height="10">

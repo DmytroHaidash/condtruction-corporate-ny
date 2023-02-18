@@ -25,6 +25,21 @@
                                 @endif
                             </div>
 
+                            <div class="form-group">
+                                <label for="description">Description</label>
+                                <input id="description"
+                                       type="text"
+                                       name="{{$lang}}[content][description]"
+                                       class="form-control{{ $errors->has('description') ? ' is-invalid' : '' }}"
+                                       value="{{ old($lang.'.description') ?? ($page->translate('content', $lang)['description'] ?? '') }}"
+                                       required>
+                                @if($errors->has('description'))
+                                    <div class="mt-1 text-danger">
+                                        {{ $errors->first('description') }}
+                                    </div>
+                                @endif
+                            </div>
+
                             <wysiwyg class="mb-0"
                                      content="{{ old('body') ?? $page->translate('content', $lang)['body'] }}"
                                      name="{{$lang}}[content][body]"
