@@ -35,6 +35,9 @@
       flex-direction: row;
     }
 
+    .block-link {
+      display: inline-flex;
+    }
     .image {
       display: flex;
       justify-content: center;
