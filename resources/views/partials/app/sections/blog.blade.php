@@ -10,7 +10,7 @@
             <div class="col-sm-10 col-lg-6">
                 <div class="description-section">
                     <p>@lang('pages.blog.description')</p>
-                    <a href="{{ route('app.blog') }}" class="btn btn-primary">@lang('pages.blog.button')</a>
+                    <a href="{{ route('app.articles.index') }}" class="btn btn-primary">@lang('pages.blog.button')</a>
                 </div>
             </div>
             @foreach($blog as $item)

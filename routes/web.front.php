@@ -39,7 +39,7 @@ Route::group([
     });
 
 
-    Route::get('blog', 'BlogController@index')->name('blog');
+   // Route::get('blog', 'BlogController@index')->name('blog');
     Route::get('about', 'PagesController@about')->name('pages.about');
     Route::get('contacts', 'PagesController@contacts')->name('pages.contacts');
     Route::get('thanks', 'PagesController@thanks')->name('pages.thanks');

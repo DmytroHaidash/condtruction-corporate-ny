@@ -17,7 +17,7 @@ class ArticlesPaginatedResource extends JsonResource
         return [
             'items' => ArticlesResource::collection($this),
             'next' => $this->nextPageUrl(),
-            'blog' => route('app.blog'),
+            'blog' => route('app.articles.index'),
         ];
     }
 }
