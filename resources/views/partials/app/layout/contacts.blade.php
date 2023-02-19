@@ -1,10 +1,15 @@
 <!-- Contacts -->
 <section id="contacts">
     <div class="map-contacts">
-        <div class="map-mask">
-            @lang('pages.contacts.map')
-        </div>
-        <div id="contacts-map"></div>
+        @if(request()->route()->getName() == 'app.home')
+            <img src="../../images/main/NY-map.png" alt="image">
+        @else
+            <div class="map-mask">
+                @lang('pages.contacts.map')
+            </div>
+
+            <div id="contacts-map"></div>
+        @endif
     </div>
     <div class="contain-fluid">
         <div class="row w-100 m-0">
