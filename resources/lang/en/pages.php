@@ -17,6 +17,7 @@ return [
         'email' => 'Email',
         'map' => 'Click to use map',
         'contacts' => 'Contact Information',
+        'main' => "Areas we serve",
     ],
     'portfolio' => [
         'next' => 'Next',

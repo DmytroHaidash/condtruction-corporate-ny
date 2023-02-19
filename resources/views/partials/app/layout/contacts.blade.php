@@ -19,7 +19,11 @@
                         <img src="/images/icon/GE-03-1.png" alt="logo">
                     </a>
                     <h2 class="title">
-                        @lang('pages.contacts.contacts')
+                        @if(request()->route()->getName() == 'app.home')
+                            @lang('pages.contacts.main')
+                        @else
+                            @lang('pages.contacts.contacts')
+                        @endif
                     </h2>
                     <div class="contacts-list">
                         <div class="contacts-item">
