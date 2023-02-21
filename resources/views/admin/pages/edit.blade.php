@@ -52,7 +52,7 @@
                 @includeIf('partials.admin.meta', ['meta' => $page->meta()->first()])
             </div>
             <div class="col-md-4">
-                <image-uploader ratio="67%" name="article" image-id="{{ optional($page->getFirstMedia('page'))->id }}"
+                <image-uploader ratio="67%" name="page" image-id="{{ optional($page->getFirstMedia('page'))->id }}"
                                 src="{{ $page->getFirstMediaUrl('page') }}"></image-uploader>
             </div>
         </div>
