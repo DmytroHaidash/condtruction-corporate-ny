@@ -51,11 +51,11 @@ class Navigation
                 'route'=> 'pages',
                 'icon' => 'i-folder',
             ]),
-            new NavItem([
+            /*new NavItem([
                'name' => 'Banners',
                'route' => 'banners',
                'icon' => 'i-monitor',
-            ]),
+            ]),*/
             new NavItem([
                 'name' => 'Setting',
                 'route' => 'settings',

@@ -18,7 +18,7 @@ Route::group([
     Route::resource('advantages', 'AdvantagesController')->except('show');
     Route::resource('feedback', 'FeedbackController')->except('create', 'store', 'show');
     Route::resource('pages', 'PagesController')->except('show', 'create', 'store', 'destroy');
-    Route::resource('banners', 'BannersController')->except('show', 'create', 'store', 'destroy');
+  //  Route::resource('banners', 'BannersController')->except('show', 'create', 'store', 'destroy');
     Route::resource('services', 'ServicesController')->except('show');
 
     Route::group([
