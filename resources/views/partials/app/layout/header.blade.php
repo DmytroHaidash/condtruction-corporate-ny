@@ -52,28 +52,28 @@
             </div>
             <div class="col-8 col-sm-2">
                 <div class="d-flex align-items-center">
-                    <div class="locale-selector d-block d-sm-none">
-                        <div class="locale-selector-value text-primary">
-                            @if(app()->getLocale() == 'uk' )
-                                ua
-                            @else
-                                {{ app()->getLocale() }}
-                            @endif
-                        </div>
-                        <ul class="locale-selector-list">
-                            @foreach($locales as $locale)
-                                <li>
-                                    <a href="#{{ $locale }}" class="locales">
-                                        @if ($locale == 'uk')
-                                            ua
-                                        @else
-                                            {{ $locale }}
-                                        @endif
-                                    </a>
-                                </li>
-                            @endforeach
-                        </ul>
-                    </div>
+{{--                    <div class="locale-selector d-block d-sm-none">--}}
+{{--                        <div class="locale-selector-value text-primary">--}}
+{{--                            @if(app()->getLocale() == 'uk' )--}}
+{{--                                ua--}}
+{{--                            @else--}}
+{{--                                {{ app()->getLocale() }}--}}
+{{--                            @endif--}}
+{{--                        </div>--}}
+{{--                        <ul class="locale-selector-list">--}}
+{{--                            @foreach($locales as $locale)--}}
+{{--                                <li>--}}
+{{--                                    <a href="#{{ $locale }}" class="locales">--}}
+{{--                                        @if ($locale == 'uk')--}}
+{{--                                            ua--}}
+{{--                                        @else--}}
+{{--                                            {{ $locale }}--}}
+{{--                                        @endif--}}
+{{--                                    </a>--}}
+{{--                                </li>--}}
+{{--                            @endforeach--}}
+{{--                        </ul>--}}
+{{--                    </div>--}}
                     <a href="/" class="logo">
                         <img src="/images/icon/GE-03-1.png" alt="logo">
                     </a>
@@ -81,28 +81,28 @@
             </div>
             <div class="col-sm-5">
                 <div class="header-contacts">
-                    <div class="locale-selector d-none d-sm-block">
-                        <div class="locale-selector-value text-primary">
-                            @if(app()->getLocale() == 'uk' )
-                                ua
-                            @else
-                                {{ app()->getLocale() }}
-                            @endif
-                        </div>
-                        <ul class="locale-selector-list">
-                            @foreach($locales as $locale)
-                                <li>
-                                    <a href="#{{ $locale }}" class="locales">
-                                        @if ($locale == 'uk')
-                                            ua
-                                        @else
-                                            {{ $locale }}
-                                        @endif
-                                    </a>
-                                </li>
-                            @endforeach
-                        </ul>
-                    </div>
+{{--                    <div class="locale-selector d-none d-sm-block">--}}
+{{--                        <div class="locale-selector-value text-primary">--}}
+{{--                            @if(app()->getLocale() == 'uk' )--}}
+{{--                                ua--}}
+{{--                            @else--}}
+{{--                                {{ app()->getLocale() }}--}}
+{{--                            @endif--}}
+{{--                        </div>--}}
+{{--                        <ul class="locale-selector-list">--}}
+{{--                            @foreach($locales as $locale)--}}
+{{--                                <li>--}}
+{{--                                    <a href="#{{ $locale }}" class="locales">--}}
+{{--                                        @if ($locale == 'uk')--}}
+{{--                                            ua--}}
+{{--                                        @else--}}
+{{--                                            {{ $locale }}--}}
+{{--                                        @endif--}}
+{{--                                    </a>--}}
+{{--                                </li>--}}
+{{--                            @endforeach--}}
+{{--                        </ul>--}}
+{{--                    </div>--}}
                     <div class="contacts-item">
                         <div class="contacts-item__title">
                             @lang('pages.header.phone')
