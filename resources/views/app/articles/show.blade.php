@@ -28,7 +28,7 @@
                     <div class="article-blog">
                         <div class="image">
                             <div>
-                                <img src="{{ $article->getFirstMediaUrl('article') }}" alt="image article">
+                                <img src="{{ asset('images/single/Frame 3.png') }}" alt="image article">
                             </div>
                         </div>
                         <h1 class="title">
