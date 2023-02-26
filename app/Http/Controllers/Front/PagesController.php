@@ -24,6 +24,13 @@ class PagesController extends Controller
 
     public function thanks()
     {
-        return \view ('app.pages.thanks', compact('page'));
+        return \view ('app.pages.thanks');
+    }
+
+    public function privacy()
+    {
+        $feedback = Banner::where('id', 3)->first();
+        $page = Page::where('slug', 'privacy-policy')->first();
+        return \view ('app.pages.index', compact('page', 'feedback'));
     }
 }

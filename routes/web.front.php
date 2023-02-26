@@ -43,5 +43,5 @@ Route::group([
     Route::get('about', 'PagesController@about')->name('pages.about');
     Route::get('contacts', 'PagesController@contacts')->name('pages.contacts');
     Route::get('thanks', 'PagesController@thanks')->name('pages.thanks');
-    
+    Route::get('privacy-policy', 'PagesController@privacy')->name('pages.privacy');
 });
