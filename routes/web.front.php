@@ -45,10 +45,16 @@ Route::group([
     Route::get('thanks', 'PagesController@thanks')->name('pages.thanks');
 
 
-    Route::get('/create', function (){
-       $page = \App\Models\Page::create([
-           ['slug' => 'privacy-policy']
+    Route::get('create', function (){
+         \App\Models\Page::insert([
+           [
+               'id' => 2,
+               'slug' => 'privacy-policy',
+               'created_at' => \Carbon\Carbon::now(),
+               'updated_at' => \Carbon\Carbon::now(),
+           ]
        ]);
+         $page = \App\Models\Page::find(2);
         foreach (config('app.locales') as $locale) {
             $page->translates()->create([
                 'lang' => $locale,
