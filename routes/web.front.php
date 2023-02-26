@@ -43,26 +43,5 @@ Route::group([
     Route::get('about', 'PagesController@about')->name('pages.about');
     Route::get('contacts', 'PagesController@contacts')->name('pages.contacts');
     Route::get('thanks', 'PagesController@thanks')->name('pages.thanks');
-
-
-    Route::get('create', function (){
-         \App\Models\Page::insert([
-           [
-               'id' => 2,
-               'slug' => 'privacy-policy',
-               'created_at' => \Carbon\Carbon::now(),
-               'updated_at' => \Carbon\Carbon::now(),
-           ]
-       ]);
-         $page = \App\Models\Page::find(2);
-        foreach (config('app.locales') as $locale) {
-            $page->translates()->create([
-                'lang' => $locale,
-                'title' => "Privacy policy",
-                'content' => [
-                    'body' => '<p>Privacy policy</p>'
-                ]
-            ]);
-        }
-    });
+    
 });
