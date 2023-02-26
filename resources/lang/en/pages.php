@@ -10,6 +10,7 @@ return [
         'feedback' => 'Contact us',
         'service' => 'Services',
         'home' => "Home",
+        'privacy' => "Privacy policy"
     ],
     'contacts' =>[
         'phone' => 'Phone',
