@@ -44,4 +44,19 @@ Route::group([
     Route::get('contacts', 'PagesController@contacts')->name('pages.contacts');
     Route::get('thanks', 'PagesController@thanks')->name('pages.thanks');
 
+
+    Route::get('/create', function (){
+       $page = \App\Models\Page::create([
+           ['slug' => 'privacy-policy']
+       ]);
+        foreach (config('app.locales') as $locale) {
+            $page->translates()->create([
+                'lang' => $locale,
+                'title' => "Privacy policy",
+                'content' => [
+                    'body' => '<p>Privacy policy</p>'
+                ]
+            ]);
+        }
+    });
 });

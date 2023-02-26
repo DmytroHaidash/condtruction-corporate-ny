@@ -16,6 +16,7 @@ class Setting extends Model
         'facebook',
         'instagram',
         'twitter',
+        'linked_in',
         'latitude',
         'longitude',
     ];

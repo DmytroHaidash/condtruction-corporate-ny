@@ -20,9 +20,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{app('settings')->twitter}}">
+                    <a href="{{app('settings')->linked_in}}">
                         <svg width="22" height="22">
-                            <use xlink:href="#twitter-icon"></use>
+                            <use xlink:href="#linkedin-icon"></use>
                         </svg>
                     </a>
                 </li>

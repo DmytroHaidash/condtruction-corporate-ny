@@ -40,9 +40,9 @@
                                value="{{ old('instagram') ?? $setting->instagram }}">
                     </div>
                     <div class="form-group">
-                        <label for="twitter">Twitter</label>
-                        <input type="text" class="form-control" id="twitter" name="twitter"
-                               value="{{ old('twitter') ?? $setting->twitter }}">
+                        <label for="linked_in">LinkedIn</label>
+                        <input type="text" class="form-control" id="linked_in" name="linked_in"
+                               value="{{ old('linked_in') ?? $setting->linked_in }}">
                     </div>
                 </div>
             </div>
