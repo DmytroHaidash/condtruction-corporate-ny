@@ -4,11 +4,12 @@
         @if(request()->route()->getName() == 'app.home')
             <img src="../../images/main/NY-map.png" alt="image">
         @else
-            <div class="map-mask">
-                @lang('pages.contacts.map')
-            </div>
+{{--            <div class="map-mask">--}}
+{{--                @lang('pages.contacts.map')--}}
+{{--            </div>--}}
 
-            <div id="contacts-map"></div>
+{{--            <div id="contacts-map"></div>--}}
+            <img src="../../images/main/Map NY.png" alt="image">
         @endif
     </div>
     <div class="contain-fluid">
