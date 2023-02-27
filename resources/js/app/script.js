@@ -44,7 +44,7 @@ require('@fancyapps/fancybox');
     const phones = $('[type="tel"]');
     Array.from(phones).forEach(phone => {
         new IMask(phone, {
-            mask: '+{38} (000) 000-00-00'
+            mask: '+{1} (000) 000-0000'
         });
     });
 
