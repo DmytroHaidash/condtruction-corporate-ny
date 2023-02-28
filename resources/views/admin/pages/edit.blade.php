@@ -1,7 +1,7 @@
 @extends('layouts.admin', ['app_title' => $page->title])
 
 @section('content')
-    <form action="{{ route('admin.pages.update', $page) }}" method="post">
+    <form action="{{ route('admin.pages.update', $page) }}" method="post" enctype="multipart/form-data">
         @csrf
         @method('patch')
         <div class="row">

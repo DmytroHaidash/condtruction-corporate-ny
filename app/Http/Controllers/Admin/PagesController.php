@@ -23,7 +23,6 @@ class PagesController extends Controller
 
     public function update(Request $request, Page $page)
     {
-
         $page->updateTranslation();
         if ($request->hasFile('page')) {
             $page->clearMediaCollection('page');
