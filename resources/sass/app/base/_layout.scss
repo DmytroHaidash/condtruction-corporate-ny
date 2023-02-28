@@ -84,7 +84,41 @@
 
 .social-list {
   display: flex;
+  .footer-menu {
+    &:hover {
+      color: $primary !important;
 
+    }
+  }
+
+  li {
+    margin-right: 20px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    a {
+      svg {
+        fill: #8A9095;
+        transition: .5s;
+      }
+
+      &:hover {
+
+        svg {
+          fill: $primary;
+        }
+      }
+    }
+  }
+}
+
+.menu-footer {
+  display: flex;
+  @media (max-width: map_get($grid-breakpoints, sm)) {
+    display: block !important;
+  }
   .footer-menu {
     &:hover {
       color: $primary !important;

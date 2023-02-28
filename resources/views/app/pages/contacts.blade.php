@@ -29,10 +29,11 @@
                     </h1>
                     <div class="contacts-description">
                         <div class="map-contacts">
-                            <div class="map-mask">
-                                @lang('pages.map.click')
-                            </div>
-                            <div id="contacts-page-maps"></div>
+{{--                            <div class="map-mask">--}}
+{{--                                @lang('pages.map.click')--}}
+{{--                            </div>--}}
+{{--                            <div id="contacts-page-maps"></div>--}}
+                            <img src="../../images/main/Map NY.png" alt="image">
                         </div>
                         <div class="contacts-list">
                             <div class="contacts-item">

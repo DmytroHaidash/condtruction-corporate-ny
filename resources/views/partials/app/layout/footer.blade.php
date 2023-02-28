@@ -4,7 +4,7 @@
         <div class="row justify-content-between mb-4">
             <div class="footer-item footer-copyright">
             </div>
-            <ul class="social-list ">
+            <ul class="menu-footer">
                 <li>
                     <a href="{{ route('app.home') }}" class="footer-menu">
                         @lang('pages.header.home')
@@ -42,7 +42,7 @@
         <div class="row justify-content-between mb-4">
             <div class="footer-item footer-copyright">
             </div>
-            <ul class="social-list">
+            <ul class="menu-footer">
                 <li>
                     <p>License:</p>
                 </li>
