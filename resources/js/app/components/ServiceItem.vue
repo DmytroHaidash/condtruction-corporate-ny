@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-12" v-for="(item, index) in posts">
       <article class="blog-item">
-        <a :href="item.link">
+        <a :href="item.link" class="block-link">
           <div class="image">
             <div>
               <img :src="item.media" alt="blog image">

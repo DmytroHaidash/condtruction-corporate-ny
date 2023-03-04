@@ -36,7 +36,10 @@
     }
 
     .block-link {
-      display: inline-flex;
+      display: block;
+      @media (min-width: map_get($grid-breakpoints, lg)) {
+        display: inline-flex;
+      }
     }
     .image {
       display: flex;
