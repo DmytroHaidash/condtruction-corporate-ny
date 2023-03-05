@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'support@acrnm.pro'),
-        'name' => env('MAIL_FROM_NAME', 'Sensar'),
+        'address' => env('MAIL_FROM_ADDRESS', 'support@homeinspectionsnynj.com'),
+        'name' => env('MAIL_FROM_NAME', 'Green estate'),
     ],
 
     /*
