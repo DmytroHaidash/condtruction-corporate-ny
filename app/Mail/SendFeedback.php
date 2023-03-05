@@ -26,8 +26,7 @@ class SendFeedback extends Mailable
     public function build()
     {
         return $this
-            //->to(app('settings')->email)
-            ->to('far4ik1991@gmail.com')
+            ->to(app('settings')->email)
             ->subject('New contact us')
             ->view('mail.feedback');
     }
