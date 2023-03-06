@@ -29,6 +29,14 @@
     <link rel="prefetch" href="{{ asset('css/app.css') }}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @yield('meta')
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QQ9FT6PLDG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-QQ9FT6PLDG');
+    </script>
 </head>
 <body>
 @includeIf('partials.app.layout.icons')
