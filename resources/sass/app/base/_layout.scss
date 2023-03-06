@@ -173,3 +173,12 @@
     visibility: hidden;
   }
 }
+h5 a {
+  text-decoration: underline;
+  color: $primary;
+
+  &:hover {
+    color: #40918a;;
+    text-decoration: underline;
+  }
+}
