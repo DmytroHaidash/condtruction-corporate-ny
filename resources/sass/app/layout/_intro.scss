@@ -15,10 +15,11 @@
 
     @media (min-width: map_get($grid-breakpoints, sm)) {
       padding-left: 60px;
+      margin-top: 60px;
     }
 
-    @media (max-width: map_get($grid-breakpoints, md)) {
-      margin-top: 60px;
+    @media (max-width: map_get($grid-breakpoints, lg)) {
+      padding-left: 60px;
     }
     &-logo {
       height: 100%;
