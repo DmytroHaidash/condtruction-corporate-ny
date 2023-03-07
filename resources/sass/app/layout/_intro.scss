@@ -2,7 +2,7 @@
   height: auto;
   padding: 150px 0 100px;
 
-  @media (min-width: map_get($grid-breakpoints, lg)) {
+  @media (min-width: map_get($grid-breakpoints, xl)) {
     height: 1080px;
     padding: 0;
   }
@@ -17,9 +17,6 @@
       padding-left: 60px;
     }
 
-    @media (max-width: map_get($grid-breakpoints, lg)) {
-      margin-top: 60px;
-    }
     &-logo {
       height: 100%;
       margin-right: 20px;
