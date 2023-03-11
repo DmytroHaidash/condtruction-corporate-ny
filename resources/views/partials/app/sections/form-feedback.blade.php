@@ -29,6 +29,11 @@
                     <input type="email" name="email" class="form-control"
                            id="user-phone" placeholder="@lang('pages.feedback.placeholder.email')" required>
                 </div>
+                <div class="form-group">
+                    <label for="user-phone">@lang('pages.feedback.message')</label>
+                    <input type="text" name="message" class="form-control"
+                           id="user-phone" placeholder="@lang('pages.feedback.placeholder.message')" required>
+                </div>
                 <button type="submit" class="btn btn-primary">@lang('pages.feedback.button')</button>
             </div>
         </form>

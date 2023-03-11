@@ -16,6 +16,7 @@ class FeedbackController extends Controller
             'name' => $request->input('name'),
             'phone' => $request->input('phone'),
             'email' => $request->input('email'),
+            'message' => $request->input('message'),
         ]);
         Mail::send(new SendFeedback($feedback));
         return \view('app.pages.thanks');

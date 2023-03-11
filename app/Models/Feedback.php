@@ -16,6 +16,7 @@ class Feedback extends Model
         'name',
         'phone',
         'email',
+        'message',
         'status',
     ];
 }

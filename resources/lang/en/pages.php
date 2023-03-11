@@ -38,10 +38,12 @@ return [
         'name' => 'Your name',
         'phone' => 'Your phone',
         'email' => "Your email",
+        'message' => 'Your message',
         'placeholder' =>[
             'name' => 'Name',
             'phone' => 'Phone',
             'email' => "Email",
+            'message' => 'Message'
         ],
         'button' => 'Contact',
     ],
