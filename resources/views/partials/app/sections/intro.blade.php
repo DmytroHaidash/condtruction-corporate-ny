@@ -25,8 +25,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 px-0">
-                <div class="intro-image d-none d-lg-block">
+            <div class="col-lg-6 px-0">
+                <div class="intro-image ">
                     <img src="../../images/main/intro-image.png" alt="image">
                 </div>
             </div>

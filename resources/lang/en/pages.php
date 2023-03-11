@@ -34,7 +34,7 @@ return [
     ],
     'feedback' => [
         'title' => 'Сontact us',
-        'description' => 'You can contact us by phone or by leaving your details by filling out the form. We are sure you call you back',
+        'description' => 'You can contact us by phone or by leaving your details by filling out the form.',
         'name' => 'Your name',
         'phone' => 'Your phone',
         'email' => "Your email",

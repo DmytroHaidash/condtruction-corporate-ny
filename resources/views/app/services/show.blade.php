@@ -8,7 +8,6 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="/">@lang('breadcrumb.main')</a></li>
-                            <li class="breadcrumb-item"><a href="{{ route('app.services.index')}}">@lang('breadcrumb.services')</a></li>
                             <li class="breadcrumb-item active">{{ $service->title }}</li>
                         </ol>
                     </nav>
