@@ -57,6 +57,11 @@ class Navigation
                'icon' => 'i-monitor',
             ]),*/
             new NavItem([
+               'name' => 'Reviews',
+               'route' => 'reviews',
+               'icon' => 'i-monitor',
+            ]),
+            new NavItem([
                 'name' => 'Setting',
                 'route' => 'settings',
                 'icon' => 'i-settings',

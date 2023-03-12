@@ -13,6 +13,7 @@ Route::group([
     })->name('home');
 
     Route::resource('articles', 'ArticlesController')->except('show');
+    Route::resource('reviews', 'ReviewsController')->except('show');
     Route::resource('categories', 'CategoriesController')->except('show');
     Route::resource('portfolios', 'PortfoliosController')->except('show');
     Route::resource('advantages', 'AdvantagesController')->except('show');
