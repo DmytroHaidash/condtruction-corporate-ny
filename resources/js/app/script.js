@@ -177,20 +177,20 @@ require('@fancyapps/fancybox');
     /**
      * Animate scroll
      */
-   /* $('.advantages-item').viewportChecker({
+    $('.advantages-item').viewportChecker({
         classToAdd: 'start-animation'
     });
     $('.feedback').viewportChecker({
         classToAdd: 'start-animation',
         offset: 500
-    });*/
-   /* $('#about').viewportChecker({
+    });
+    $('#about').viewportChecker({
         classToAdd: 'start-animation',
         offset: 500
-    });*/
-   /* $('#blog .description-section').viewportChecker({
+    });
+    $('#blog .description-section').viewportChecker({
         classToAdd: 'start-animation',
-    });*/
+    });
     // $('.article-blog').viewportChecker({
     //     classToAdd: 'start-animation',
     // });
